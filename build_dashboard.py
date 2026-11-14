@@ -273,9 +273,10 @@ def stat_box(label, value, sub, cls):
 def team_view(matches, team, idx, prefix, all_count):
     st = team_stats(matches, team)
     tms = team_matches(matches, team)
+    total_n = len(tms)
     rows = []
-    for i, m in enumerate(tms, 1):
-        rows.append(match_card(m, i, focus=team))
+    for i, m in enumerate(reversed(tms)):
+        rows.append(match_card(m, total_n - i, focus=team))
     fav_lbl = f"{st['fav_streak'][1]}연속 {st['fav_streak'][0]}"
     ma_lbl = f"{st['ma_streak'][1]}연속 {st['ma_streak'][0]}"
     uo_lbl = f"{st['uo_streak'][1]}연속 {st['uo_streak'][0]}"
@@ -319,7 +320,8 @@ def team_view(matches, team, idx, prefix, all_count):
 
 def overall_view(matches, prefix, title, sub):
     st = global_stats(matches)
-    rows = ''.join(ohlc_row(m, i) for i, m in enumerate(matches, 1))
+    total_n = len(matches)
+    rows = ''.join(ohlc_row(m, total_n - i) for i, m in enumerate(reversed(matches)))
     fav_streak = f"{st['fav_streak'][1]}연속 {st['fav_streak'][0]}"
     uo_streak = f"{st['uo_streak'][1]}연속 {st['uo_streak'][0]}"
     return f"""
@@ -333,7 +335,7 @@ def overall_view(matches, prefix, title, sub):
           {stat_box('연속 흐름', fav_streak, uo_streak, 'c-flow')}
         </div>
         <div class="tbl-wrap">
-          <div class="tbl-head"><span>개막전부터 일정 순서 누계</span><span>{sub}</span></div>
+          <div class="tbl-head"><span>최신 경기 위 · 개막전(#1) 아래</span><span>{sub}</span></div>
           <div class="scroll">
             <table class="tbl">
               <thead>

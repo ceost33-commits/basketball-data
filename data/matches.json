@@ -1,0 +1,4693 @@
+{
+  "last_updated": "2026-11-15 04:29",
+  "source": "m.betman.co.kr 프로토 승부식 적중결과 (winrstDetl.do) DOM",
+  "labels": {
+    "handicap": "마핸/플핸 (홈 기준 '-' 핸디캡 팀이 기준점을 넘기면 마핸, '+' 핸디캡 팀이 지켜내면 플핸)",
+    "hit_type": "정배 = 마감 배당이 낮은 팀 적중 / 역배 = 마감 배당이 높은 팀 적중"
+  },
+  "mens": [
+    {
+      "id": "M6085",
+      "seq": 6085,
+      "date": "2026-10-03 14:00",
+      "round": "프로토 승부식 117회차",
+      "round_ts": 260117,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 68,
+      "away_score": 103,
+      "score": "68:103",
+      "margin": -35,
+      "total_points": 171,
+      "win_lose": {
+        "match_no": 6085,
+        "home_odds": 1.89,
+        "away_odds": 1.65,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.65,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 6085,
+        "standard": 1.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": false,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6085,
+        "standard": 168.5,
+        "over_odds": 1.75,
+        "under_odds": 1.77,
+        "total": 171,
+        "result": "OVER",
+        "hit_odds": 1.75,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6085,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M6090",
+      "seq": 6090,
+      "date": "2026-10-03 14:00",
+      "round": "프로토 승부식 117회차",
+      "round_ts": 260117,
+      "league": "KBL",
+      "home": "고양소노",
+      "away": "한국가스",
+      "status": "종료",
+      "home_score": 82,
+      "away_score": 73,
+      "score": "82:73",
+      "margin": 9,
+      "total_points": 155,
+      "win_lose": {
+        "match_no": 6090,
+        "home_odds": 1.12,
+        "away_odds": 4.11,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.12,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 6090,
+        "standard": -8.5,
+        "home_odds": 1.71,
+        "away_odds": 1.81,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.71,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -8.5,
+            "cover": true,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6090,
+        "standard": 168.5,
+        "over_odds": 1.69,
+        "under_odds": 1.84,
+        "total": 155,
+        "result": "UNDER",
+        "hit_odds": 1.84,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6090,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M6119",
+      "seq": 6119,
+      "date": "2026-10-03 16:30",
+      "round": "프로토 승부식 117회차",
+      "round_ts": 260117,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "울산모비",
+      "status": "종료",
+      "home_score": 88,
+      "away_score": 85,
+      "score": "88:85",
+      "margin": 3,
+      "total_points": 173,
+      "win_lose": {
+        "match_no": 6119,
+        "home_odds": 1.49,
+        "away_odds": 2.15,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.49,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 6119,
+        "standard": -3.5,
+        "home_odds": 1.81,
+        "away_odds": 1.71,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.71,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6119,
+        "standard": 159.5,
+        "over_odds": 1.77,
+        "under_odds": 1.75,
+        "total": 173,
+        "result": "OVER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6119,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M6315",
+      "seq": 6315,
+      "date": "2026-10-04 14:00",
+      "round": "프로토 승부식 117회차",
+      "round_ts": 260117,
+      "league": "KBL",
+      "home": "원주DB",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 95,
+      "away_score": 86,
+      "score": "95:86",
+      "margin": 9,
+      "total_points": 181,
+      "win_lose": {
+        "match_no": 6315,
+        "home_odds": 1.55,
+        "away_odds": 2.04,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.55,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 6315,
+        "standard": -2.5,
+        "home_odds": 1.7,
+        "away_odds": 1.82,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.7,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -1.5,
+            "cover": true,
+            "hit_odds": 1.7
+          },
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.7
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6315,
+        "standard": 175.5,
+        "over_odds": 1.81,
+        "under_odds": 1.71,
+        "total": 181,
+        "result": "OVER",
+        "hit_odds": 1.81,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6315,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M6324",
+      "seq": 6324,
+      "date": "2026-10-04 16:30",
+      "round": "프로토 승부식 117회차",
+      "round_ts": 260117,
+      "league": "KBL",
+      "home": "KT소닉붐",
+      "away": "서울삼성",
+      "status": "종료",
+      "home_score": 76,
+      "away_score": 81,
+      "score": "76:81",
+      "margin": -5,
+      "total_points": 157,
+      "win_lose": {
+        "match_no": 6324,
+        "home_odds": 1.35,
+        "away_odds": 2.53,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.53,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 6324,
+        "standard": -6.5,
+        "home_odds": 1.87,
+        "away_odds": 1.66,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.66,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -6.5,
+            "cover": false,
+            "hit_odds": 1.66
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6324,
+        "standard": 165.5,
+        "over_odds": 1.74,
+        "under_odds": 1.78,
+        "total": 157,
+        "result": "UNDER",
+        "hit_odds": 1.78,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6324,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M6473",
+      "seq": 6473,
+      "date": "2026-10-05 14:00",
+      "round": "프로토 승부식 118회차",
+      "round_ts": 260118,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "부산KCC",
+      "status": "종료",
+      "home_score": 87,
+      "away_score": 97,
+      "score": "87:97",
+      "margin": -10,
+      "total_points": 184,
+      "win_lose": {
+        "match_no": 6473,
+        "home_odds": 1.25,
+        "away_odds": 2.97,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.97,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 6473,
+        "standard": -6.5,
+        "home_odds": 1.8,
+        "away_odds": 1.72,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.72,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -6.5,
+            "cover": false,
+            "hit_odds": 1.72
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6473,
+        "standard": 171.5,
+        "over_odds": 1.73,
+        "under_odds": 1.79,
+        "total": 184,
+        "result": "OVER",
+        "hit_odds": 1.73,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6473,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M6486",
+      "seq": 6486,
+      "date": "2026-10-05 16:30",
+      "round": "프로토 승부식 118회차",
+      "round_ts": 260118,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "안양정관",
+      "status": "종료",
+      "home_score": 80,
+      "away_score": 86,
+      "score": "80:86",
+      "margin": -6,
+      "total_points": 166,
+      "win_lose": {
+        "match_no": 6486,
+        "home_odds": 2.37,
+        "away_odds": 1.4,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.4,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 6486,
+        "standard": 4.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 4.5,
+            "cover": false,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6486,
+        "standard": 161.5,
+        "over_odds": 1.73,
+        "under_odds": 1.79,
+        "total": 166,
+        "result": "OVER",
+        "hit_odds": 1.73,
+        "line_count": 4
+      },
+      "w5": {
+        "match_no": 6486,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M6663",
+      "seq": 6663,
+      "date": "2026-10-06 19:00",
+      "round": "프로토 승부식 118회차",
+      "round_ts": 260118,
+      "league": "KBL",
+      "home": "KT소닉붐",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 97,
+      "away_score": 72,
+      "score": "97:72",
+      "margin": 25,
+      "total_points": 169,
+      "win_lose": {
+        "match_no": 6663,
+        "home_odds": 3.38,
+        "away_odds": 1.19,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 3.38,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 6663,
+        "standard": 7.5,
+        "home_odds": 1.77,
+        "away_odds": 1.75,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 7.5,
+            "cover": true,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6663,
+        "standard": 165.5,
+        "over_odds": 1.79,
+        "under_odds": 1.73,
+        "total": 169,
+        "result": "OVER",
+        "hit_odds": 1.79,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 6663,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M6869",
+      "seq": 6869,
+      "date": "2026-10-07 19:00",
+      "round": "프로토 승부식 119회차",
+      "round_ts": 260119,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "한국가스",
+      "status": "종료",
+      "home_score": 103,
+      "away_score": 98,
+      "score": "103:98",
+      "margin": 5,
+      "total_points": 201,
+      "win_lose": {
+        "match_no": 6869,
+        "home_odds": 1.33,
+        "away_odds": 2.6,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.33,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 6869,
+        "standard": -5.5,
+        "home_odds": 1.75,
+        "away_odds": 1.77,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -6.5,
+            "cover": false,
+            "hit_odds": 1.71
+          },
+          {
+            "standard": -5.5,
+            "cover": false,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6869,
+        "standard": 173.5,
+        "over_odds": 1.76,
+        "under_odds": 1.76,
+        "total": 201,
+        "result": "OVER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6869,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M6947",
+      "seq": 6947,
+      "date": "2026-10-08 19:00",
+      "round": "프로토 승부식 119회차",
+      "round_ts": 260119,
+      "league": "KBL",
+      "home": "원주DB",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 92,
+      "away_score": 96,
+      "score": "92:96",
+      "margin": -4,
+      "total_points": 188,
+      "win_lose": {
+        "match_no": 6947,
+        "home_odds": 1.47,
+        "away_odds": 2.19,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.19,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 6947,
+        "standard": -3.5,
+        "home_odds": 1.69,
+        "away_odds": 1.84,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.84,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.84
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 6947,
+        "standard": 173.5,
+        "over_odds": 1.7,
+        "under_odds": 1.82,
+        "total": 188,
+        "result": "OVER",
+        "hit_odds": 1.7,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 6947,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M7019",
+      "seq": 7019,
+      "date": "2026-10-09 14:00",
+      "round": "프로토 승부식 120회차",
+      "round_ts": 260120,
+      "league": "KBL",
+      "home": "KT소닉붐",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 88,
+      "away_score": 79,
+      "score": "88:79",
+      "margin": 9,
+      "total_points": 167,
+      "win_lose": {
+        "match_no": 7019,
+        "home_odds": 2.31,
+        "away_odds": 1.42,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.31,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 7019,
+        "standard": 4.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.76,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": 3.5,
+            "cover": true,
+            "hit_odds": 1.81
+          },
+          {
+            "standard": 4.5,
+            "cover": true,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7019,
+        "standard": 171.5,
+        "over_odds": 1.73,
+        "under_odds": 1.79,
+        "total": 167,
+        "result": "UNDER",
+        "hit_odds": 1.79,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 7019,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M7052",
+      "seq": 7052,
+      "date": "2026-10-09 16:30",
+      "round": "프로토 승부식 120회차",
+      "round_ts": 260120,
+      "league": "KBL",
+      "home": "서울삼성",
+      "away": "안양정관",
+      "status": "종료",
+      "home_score": 66,
+      "away_score": 58,
+      "score": "66:58",
+      "margin": 8,
+      "total_points": 124,
+      "win_lose": {
+        "match_no": 7052,
+        "home_odds": 2.05,
+        "away_odds": 1.54,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.05,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 7052,
+        "standard": 2.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.76,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": 4.5,
+            "cover": true,
+            "hit_odds": 1.81
+          },
+          {
+            "standard": 2.5,
+            "cover": true,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7052,
+        "standard": 166.5,
+        "over_odds": 1.72,
+        "under_odds": 1.8,
+        "total": 124,
+        "result": "UNDER",
+        "hit_odds": 1.8,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 7052,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M7160",
+      "seq": 7160,
+      "date": "2026-10-10 14:00",
+      "round": "프로토 승부식 120회차",
+      "round_ts": 260120,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 79,
+      "away_score": 85,
+      "score": "79:85",
+      "margin": -6,
+      "total_points": 164,
+      "win_lose": {
+        "match_no": 7160,
+        "home_odds": 2.04,
+        "away_odds": 1.55,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.55,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 7160,
+        "standard": 2.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 2.5,
+            "cover": false,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7160,
+        "standard": 180.5,
+        "over_odds": 1.71,
+        "under_odds": 1.81,
+        "total": 164,
+        "result": "UNDER",
+        "hit_odds": 1.81,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 7160,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M7197",
+      "seq": 7197,
+      "date": "2026-10-10 16:30",
+      "round": "프로토 승부식 120회차",
+      "round_ts": 260120,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "한국가스",
+      "status": "종료",
+      "home_score": 75,
+      "away_score": 81,
+      "score": "75:81",
+      "margin": -6,
+      "total_points": 156,
+      "win_lose": {
+        "match_no": 7197,
+        "home_odds": 1.45,
+        "away_odds": 2.24,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.24,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 7197,
+        "standard": -3.5,
+        "home_odds": 1.7,
+        "away_odds": 1.82,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.82,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.82
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7197,
+        "standard": 171.5,
+        "over_odds": 1.81,
+        "under_odds": 1.71,
+        "total": 156,
+        "result": "UNDER",
+        "hit_odds": 1.71,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 7197,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M7578",
+      "seq": 7578,
+      "date": "2026-10-11 14:00",
+      "round": "프로토 승부식 120회차",
+      "round_ts": 260120,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 88,
+      "away_score": 65,
+      "score": "88:65",
+      "margin": 23,
+      "total_points": 153,
+      "win_lose": {
+        "match_no": 7578,
+        "home_odds": 2.46,
+        "away_odds": 1.37,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.46,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 7578,
+        "standard": 4.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.76,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": 3.5,
+            "cover": true,
+            "hit_odds": 1.81
+          },
+          {
+            "standard": 4.5,
+            "cover": true,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7578,
+        "standard": 165.5,
+        "over_odds": 1.78,
+        "under_odds": 1.74,
+        "total": 153,
+        "result": "UNDER",
+        "hit_odds": 1.74,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 7578,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M7583",
+      "seq": 7583,
+      "date": "2026-10-11 14:00",
+      "round": "프로토 승부식 120회차",
+      "round_ts": 260120,
+      "league": "KBL",
+      "home": "서울삼성",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 82,
+      "away_score": 81,
+      "score": "82:81",
+      "margin": 1,
+      "total_points": 163,
+      "win_lose": {
+        "match_no": 7583,
+        "home_odds": 2.72,
+        "away_odds": 1.3,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.72,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 7583,
+        "standard": 5.5,
+        "home_odds": 1.8,
+        "away_odds": 1.72,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.8,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 5.5,
+            "cover": true,
+            "hit_odds": 1.8
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7583,
+        "standard": 165.5,
+        "over_odds": 1.78,
+        "under_odds": 1.74,
+        "total": 163,
+        "result": "UNDER",
+        "hit_odds": 1.74,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 7583,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M7608",
+      "seq": 7608,
+      "date": "2026-10-11 16:30",
+      "round": "프로토 승부식 120회차",
+      "round_ts": 260120,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 81,
+      "away_score": 87,
+      "score": "81:87",
+      "margin": -6,
+      "total_points": 168,
+      "win_lose": {
+        "match_no": 7608,
+        "home_odds": 2.02,
+        "away_odds": 1.56,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.56,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 7608,
+        "standard": 2.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 2.5,
+            "cover": false,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7608,
+        "standard": 174.5,
+        "over_odds": 1.66,
+        "under_odds": 1.87,
+        "total": 168,
+        "result": "UNDER",
+        "hit_odds": 1.87,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 7608,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M7801",
+      "seq": 7801,
+      "date": "2026-10-12 19:00",
+      "round": "프로토 승부식 121회차",
+      "round_ts": 260121,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 99,
+      "away_score": 89,
+      "score": "99:89",
+      "margin": 10,
+      "total_points": 188,
+      "win_lose": {
+        "match_no": 7801,
+        "home_odds": 2.72,
+        "away_odds": 1.3,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.72,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 7801,
+        "standard": 6.5,
+        "home_odds": 1.7,
+        "away_odds": 1.82,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.7,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 6.5,
+            "cover": true,
+            "hit_odds": 1.7
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7801,
+        "standard": 174.5,
+        "over_odds": 1.76,
+        "under_odds": 1.76,
+        "total": 188,
+        "result": "OVER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 7801,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M7931",
+      "seq": 7931,
+      "date": "2026-10-13 19:00",
+      "round": "프로토 승부식 121회차",
+      "round_ts": 260121,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 85,
+      "away_score": 81,
+      "score": "85:81",
+      "margin": 4,
+      "total_points": 166,
+      "win_lose": {
+        "match_no": 7931,
+        "home_odds": 1.58,
+        "away_odds": 1.99,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.58,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 7931,
+        "standard": -2.5,
+        "home_odds": 1.79,
+        "away_odds": 1.73,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.79,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.79
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7931,
+        "standard": 164.5,
+        "over_odds": 1.73,
+        "under_odds": 1.79,
+        "total": 166,
+        "result": "OVER",
+        "hit_odds": 1.73,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 7931,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M8149",
+      "seq": 8149,
+      "date": "2026-10-14 19:00",
+      "round": "프로토 승부식 122회차",
+      "round_ts": 260122,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 82,
+      "away_score": 69,
+      "score": "82:69",
+      "margin": 13,
+      "total_points": 151,
+      "win_lose": {
+        "match_no": 8149,
+        "home_odds": 2.43,
+        "away_odds": 1.38,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.43,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 8149,
+        "standard": 5.5,
+        "home_odds": 1.73,
+        "away_odds": 1.79,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.73,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 5.5,
+            "cover": true,
+            "hit_odds": 1.73
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 8149,
+        "standard": 168.5,
+        "over_odds": 1.82,
+        "under_odds": 1.7,
+        "total": 151,
+        "result": "UNDER",
+        "hit_odds": 1.7,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 8149,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M8382",
+      "seq": 8382,
+      "date": "2026-10-15 19:00",
+      "round": "프로토 승부식 122회차",
+      "round_ts": 260122,
+      "league": "KBL",
+      "home": "서울삼성",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 93,
+      "away_score": 86,
+      "score": "93:86",
+      "margin": 7,
+      "total_points": 179,
+      "win_lose": {
+        "match_no": 8382,
+        "home_odds": 1.97,
+        "away_odds": 1.59,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 1.97,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 8382,
+        "standard": 2.5,
+        "home_odds": 1.77,
+        "away_odds": 1.75,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 2.5,
+            "cover": true,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 8382,
+        "standard": 161.5,
+        "over_odds": 1.74,
+        "under_odds": 1.78,
+        "total": 179,
+        "result": "OVER",
+        "hit_odds": 1.74,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 8382,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M8633",
+      "seq": 8633,
+      "date": "2026-10-16 19:00",
+      "round": "프로토 승부식 123회차",
+      "round_ts": 260123,
+      "league": "KBL",
+      "home": "고양소노",
+      "away": "울산모비",
+      "status": "종료",
+      "home_score": 95,
+      "away_score": 82,
+      "score": "95:82",
+      "margin": 13,
+      "total_points": 177,
+      "win_lose": {
+        "match_no": 8633,
+        "home_odds": 1.44,
+        "away_odds": 2.26,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.44,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 8633,
+        "standard": -3.5,
+        "home_odds": 1.75,
+        "away_odds": 1.77,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.75,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": true,
+            "hit_odds": 1.75
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 8633,
+        "standard": 172.5,
+        "over_odds": 1.74,
+        "under_odds": 1.78,
+        "total": 177,
+        "result": "OVER",
+        "hit_odds": 1.74,
+        "line_count": 3
+      },
+      "w5": {
+        "match_no": 8633,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M8749",
+      "seq": 8749,
+      "date": "2026-10-17 14:00",
+      "round": "프로토 승부식 123회차",
+      "round_ts": 260123,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 89,
+      "away_score": 69,
+      "score": "89:69",
+      "margin": 20,
+      "total_points": 158,
+      "win_lose": {
+        "match_no": 8749,
+        "home_odds": 1.37,
+        "away_odds": 2.46,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.37,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 8749,
+        "standard": -4.5,
+        "home_odds": 1.75,
+        "away_odds": 1.77,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.75,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -4.5,
+            "cover": true,
+            "hit_odds": 1.75
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 8749,
+        "standard": 163.5,
+        "over_odds": 1.77,
+        "under_odds": 1.75,
+        "total": 158,
+        "result": "UNDER",
+        "hit_odds": 1.75,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 8749,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M8754",
+      "seq": 8754,
+      "date": "2026-10-17 14:00",
+      "round": "프로토 승부식 123회차",
+      "round_ts": 260123,
+      "league": "KBL",
+      "home": "원주DB",
+      "away": "서울삼성",
+      "status": "종료",
+      "home_score": 92,
+      "away_score": 95,
+      "score": "92:95",
+      "margin": -3,
+      "total_points": 187,
+      "win_lose": {
+        "match_no": 8754,
+        "home_odds": 1.25,
+        "away_odds": 2.97,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.97,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 8754,
+        "standard": -7.5,
+        "home_odds": 1.85,
+        "away_odds": 1.68,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.68,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -7.5,
+            "cover": false,
+            "hit_odds": 1.68
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 8754,
+        "standard": 173.5,
+        "over_odds": 1.77,
+        "under_odds": 1.75,
+        "total": 187,
+        "result": "OVER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 8754,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M8795",
+      "seq": 8795,
+      "date": "2026-10-17 16:30",
+      "round": "프로토 승부식 123회차",
+      "round_ts": 260123,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 85,
+      "away_score": 75,
+      "score": "85:75",
+      "margin": 10,
+      "total_points": 160,
+      "win_lose": {
+        "match_no": 8795,
+        "home_odds": 1.42,
+        "away_odds": 2.31,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.42,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 8795,
+        "standard": -3.5,
+        "home_odds": 1.71,
+        "away_odds": 1.81,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.71,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.71
+          },
+          {
+            "standard": -3.5,
+            "cover": true,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 8795,
+        "standard": 167.5,
+        "over_odds": 1.82,
+        "under_odds": 1.7,
+        "total": 160,
+        "result": "UNDER",
+        "hit_odds": 1.7,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 8795,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M9132",
+      "seq": 9132,
+      "date": "2026-10-18 14:00",
+      "round": "프로토 승부식 123회차",
+      "round_ts": 260123,
+      "league": "KBL",
+      "home": "서울SK",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 81,
+      "away_score": 87,
+      "score": "81:87",
+      "margin": -6,
+      "total_points": 168,
+      "win_lose": {
+        "match_no": 9132,
+        "home_odds": 1.64,
+        "away_odds": 1.9,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 1.9,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 9132,
+        "standard": -1.5,
+        "home_odds": 1.75,
+        "away_odds": 1.77,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -1.5,
+            "cover": false,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 9132,
+        "standard": 170.5,
+        "over_odds": 1.74,
+        "under_odds": 1.78,
+        "total": 168,
+        "result": "UNDER",
+        "hit_odds": 1.78,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 9132,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M9137",
+      "seq": 9137,
+      "date": "2026-10-18 14:00",
+      "round": "프로토 승부식 123회차",
+      "round_ts": 260123,
+      "league": "KBL",
+      "home": "KT소닉붐",
+      "away": "울산모비",
+      "status": "종료",
+      "home_score": 80,
+      "away_score": 96,
+      "score": "80:96",
+      "margin": -16,
+      "total_points": 176,
+      "win_lose": {
+        "match_no": 9137,
+        "home_odds": 1.42,
+        "away_odds": 2.31,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.31,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 9137,
+        "standard": -4.5,
+        "home_odds": 1.84,
+        "away_odds": 1.69,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.69,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -4.5,
+            "cover": false,
+            "hit_odds": 1.69
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 9137,
+        "standard": 169.5,
+        "over_odds": 1.76,
+        "under_odds": 1.76,
+        "total": 176,
+        "result": "OVER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 9137,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M9174",
+      "seq": 9174,
+      "date": "2026-10-18 16:30",
+      "round": "프로토 승부식 123회차",
+      "round_ts": 260123,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "부산KCC",
+      "status": "종료",
+      "home_score": 81,
+      "away_score": 74,
+      "score": "81:74",
+      "margin": 7,
+      "total_points": 155,
+      "win_lose": {
+        "match_no": 9174,
+        "home_odds": 1.34,
+        "away_odds": 2.56,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.34,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 9174,
+        "standard": -5.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -5.5,
+            "cover": true,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 9174,
+        "standard": 171.5,
+        "over_odds": 1.82,
+        "under_odds": 1.7,
+        "total": 155,
+        "result": "UNDER",
+        "hit_odds": 1.7,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 9174,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M9357",
+      "seq": 9357,
+      "date": "2026-10-19 19:00",
+      "round": "프로토 승부식 124회차",
+      "round_ts": 260124,
+      "league": "KBL",
+      "home": "원주DB",
+      "away": "한국가스",
+      "status": "종료",
+      "home_score": 104,
+      "away_score": 78,
+      "score": "104:78",
+      "margin": 26,
+      "total_points": 182,
+      "win_lose": {
+        "match_no": 9357,
+        "home_odds": 1.51,
+        "away_odds": 2.11,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.51,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 9357,
+        "standard": -3.5,
+        "home_odds": 1.77,
+        "away_odds": 1.75,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.77,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.72
+          },
+          {
+            "standard": -3.5,
+            "cover": true,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 9357,
+        "standard": 172.5,
+        "over_odds": 1.72,
+        "under_odds": 1.8,
+        "total": 182,
+        "result": "OVER",
+        "hit_odds": 1.72,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 9357,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M9425",
+      "seq": 9425,
+      "date": "2026-10-20 19:00",
+      "round": "프로토 승부식 124회차",
+      "round_ts": 260124,
+      "league": "KBL",
+      "home": "서울SK",
+      "away": "안양정관",
+      "status": "종료",
+      "home_score": 84,
+      "away_score": 76,
+      "score": "84:76",
+      "margin": 8,
+      "total_points": 160,
+      "win_lose": {
+        "match_no": 9425,
+        "home_odds": 1.29,
+        "away_odds": 2.77,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.29,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 9425,
+        "standard": -5.5,
+        "home_odds": 1.76,
+        "away_odds": 1.76,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 4,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": true,
+            "hit_odds": 1.76
+          },
+          {
+            "standard": -3.5,
+            "cover": true,
+            "hit_odds": 1.76
+          },
+          {
+            "standard": -4.5,
+            "cover": true,
+            "hit_odds": 1.71
+          },
+          {
+            "standard": -5.5,
+            "cover": true,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 9425,
+        "standard": 161.5,
+        "over_odds": 1.78,
+        "under_odds": 1.74,
+        "total": 160,
+        "result": "UNDER",
+        "hit_odds": 1.74,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 9425,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M9630",
+      "seq": 9630,
+      "date": "2026-10-21 19:00",
+      "round": "프로토 승부식 125회차",
+      "round_ts": 260125,
+      "league": "KBL",
+      "home": "서울삼성",
+      "away": "부산KCC",
+      "status": "종료",
+      "home_score": 97,
+      "away_score": 86,
+      "score": "97:86",
+      "margin": 11,
+      "total_points": 183,
+      "win_lose": {
+        "match_no": 9630,
+        "home_odds": 1.63,
+        "away_odds": 1.87,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.63,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 9630,
+        "standard": -1.5,
+        "home_odds": 1.76,
+        "away_odds": 1.72,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.76
+          },
+          {
+            "standard": -1.5,
+            "cover": true,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 9630,
+        "standard": 171.5,
+        "over_odds": 1.69,
+        "under_odds": 1.79,
+        "total": 183,
+        "result": "OVER",
+        "hit_odds": 1.69,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 9630,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M9806",
+      "seq": 9806,
+      "date": "2026-10-22 19:00",
+      "round": "프로토 승부식 125회차",
+      "round_ts": 260125,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 83,
+      "away_score": 88,
+      "score": "83:88",
+      "margin": -5,
+      "total_points": 171,
+      "win_lose": {
+        "match_no": 9806,
+        "home_odds": 1.83,
+        "away_odds": 1.66,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.66,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 9806,
+        "standard": 1.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.74,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": 2.5,
+            "cover": false,
+            "hit_odds": 1.77
+          },
+          {
+            "standard": 1.5,
+            "cover": false,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 9806,
+        "standard": 171.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": 171,
+        "result": "UNDER",
+        "hit_odds": 1.71,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 9806,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M7",
+      "seq": 7,
+      "date": "2026-10-23 19:00",
+      "round": "프로토 승부식 126회차",
+      "round_ts": 260126,
+      "league": "KBL",
+      "home": "KT소닉붐",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 95,
+      "away_score": 102,
+      "score": "95:102",
+      "margin": -7,
+      "total_points": 197,
+      "win_lose": {
+        "match_no": 7,
+        "home_odds": 1.37,
+        "away_odds": 2.38,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.38,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 7,
+        "standard": -4.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.74,
+        "line_count": 3,
+        "line_history": [
+          {
+            "standard": 3.5,
+            "cover": false,
+            "hit_odds": 1.65
+          },
+          {
+            "standard": -2.5,
+            "cover": false,
+            "hit_odds": 1.75
+          },
+          {
+            "standard": -4.5,
+            "cover": false,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 7,
+        "standard": 173.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 197,
+        "result": "OVER",
+        "hit_odds": 1.71,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 7,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M184",
+      "seq": 184,
+      "date": "2026-10-24 14:00",
+      "round": "프로토 승부식 126회차",
+      "round_ts": 260126,
+      "league": "KBL",
+      "home": "서울SK",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 86,
+      "away_score": 85,
+      "score": "86:85",
+      "margin": 1,
+      "total_points": 171,
+      "win_lose": {
+        "match_no": 184,
+        "home_odds": 1.51,
+        "away_odds": 2.05,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.51,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 184,
+        "standard": -2.5,
+        "home_odds": 1.71,
+        "away_odds": 1.77,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": false,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 184,
+        "standard": 165.5,
+        "over_odds": 1.75,
+        "under_odds": 1.73,
+        "total": 171,
+        "result": "OVER",
+        "hit_odds": 1.75,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 184,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M245",
+      "seq": 245,
+      "date": "2026-10-24 16:30",
+      "round": "프로토 승부식 126회차",
+      "round_ts": 260126,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "서울삼성",
+      "status": "종료",
+      "home_score": 71,
+      "away_score": 91,
+      "score": "71:91",
+      "margin": -20,
+      "total_points": 162,
+      "win_lose": {
+        "match_no": 245,
+        "home_odds": 2.52,
+        "away_odds": 1.33,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.33,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 245,
+        "standard": 6.5,
+        "home_odds": 1.64,
+        "away_odds": 1.85,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.85,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 6.5,
+            "cover": false,
+            "hit_odds": 1.85
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 245,
+        "standard": 169.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 162,
+        "result": "UNDER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 245,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M250",
+      "seq": 250,
+      "date": "2026-10-24 16:30",
+      "round": "프로토 승부식 126회차",
+      "round_ts": 260126,
+      "league": "KBL",
+      "home": "고양소노",
+      "away": "부산KCC",
+      "status": "종료",
+      "home_score": 97,
+      "away_score": 96,
+      "score": "97:96",
+      "margin": 1,
+      "total_points": 193,
+      "win_lose": {
+        "match_no": 250,
+        "home_odds": 1.32,
+        "away_odds": 2.55,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.32,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 250,
+        "standard": -5.5,
+        "home_odds": 1.77,
+        "away_odds": 1.71,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.71,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -5.5,
+            "cover": false,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 250,
+        "standard": 175.5,
+        "over_odds": 1.76,
+        "under_odds": 1.72,
+        "total": 193,
+        "result": "OVER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 250,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M575",
+      "seq": 575,
+      "date": "2026-10-25 14:00",
+      "round": "프로토 승부식 126회차",
+      "round_ts": 260126,
+      "league": "KBL",
+      "home": "서울SK",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 90,
+      "away_score": 79,
+      "score": "90:79",
+      "margin": 11,
+      "total_points": 169,
+      "win_lose": {
+        "match_no": 575,
+        "home_odds": 1.35,
+        "away_odds": 2.45,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.35,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 575,
+        "standard": -4.5,
+        "home_odds": 1.71,
+        "away_odds": 1.77,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.71,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -5.5,
+            "cover": true,
+            "hit_odds": 1.78
+          },
+          {
+            "standard": -4.5,
+            "cover": true,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 575,
+        "standard": 168.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": 169,
+        "result": "OVER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 575,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M580",
+      "seq": 580,
+      "date": "2026-10-25 14:00",
+      "round": "프로토 승부식 126회차",
+      "round_ts": 260126,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 93,
+      "away_score": 95,
+      "score": "93:95",
+      "margin": -2,
+      "total_points": 188,
+      "win_lose": {
+        "match_no": 580,
+        "home_odds": 1.69,
+        "away_odds": 1.79,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 1.79,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 580,
+        "standard": -1.5,
+        "home_odds": 1.8,
+        "away_odds": 1.68,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.68,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -1.5,
+            "cover": false,
+            "hit_odds": 1.68
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 580,
+        "standard": 170.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 188,
+        "result": "OVER",
+        "hit_odds": 1.72,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 580,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M617",
+      "seq": 617,
+      "date": "2026-10-25 16:30",
+      "round": "프로토 승부식 126회차",
+      "round_ts": 260126,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "서울삼성",
+      "status": "종료",
+      "home_score": 68,
+      "away_score": 76,
+      "score": "68:76",
+      "margin": -8,
+      "total_points": 144,
+      "win_lose": {
+        "match_no": 617,
+        "home_odds": 2.2,
+        "away_odds": 1.44,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.44,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 617,
+        "standard": 4.5,
+        "home_odds": 1.69,
+        "away_odds": 1.79,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.79,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 4.5,
+            "cover": false,
+            "hit_odds": 1.79
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 617,
+        "standard": 167.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 144,
+        "result": "UNDER",
+        "hit_odds": 1.76,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 617,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M804",
+      "seq": 804,
+      "date": "2026-10-26 19:00",
+      "round": "프로토 승부식 127회차",
+      "round_ts": 260127,
+      "league": "KBL",
+      "home": "고양소노",
+      "away": "창원LG",
+      "status": "종료",
+      "home_score": 107,
+      "away_score": 109,
+      "score": "107:109",
+      "margin": -2,
+      "total_points": 216,
+      "win_lose": {
+        "match_no": 804,
+        "home_odds": 1.44,
+        "away_odds": 2.2,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.2,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 804,
+        "standard": -3.5,
+        "home_odds": 1.73,
+        "away_odds": 1.75,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.75,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.75
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 804,
+        "standard": 170.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
+        "total": 216,
+        "result": "OVER",
+        "hit_odds": 1.74,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 804,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M911",
+      "seq": 911,
+      "date": "2026-10-27 19:00",
+      "round": "프로토 승부식 127회차",
+      "round_ts": 260127,
+      "league": "KBL",
+      "home": "서울SK",
+      "away": "부산KCC",
+      "status": "종료",
+      "home_score": 96,
+      "away_score": 87,
+      "score": "96:87",
+      "margin": 9,
+      "total_points": 183,
+      "win_lose": {
+        "match_no": 911,
+        "home_odds": 1.34,
+        "away_odds": 2.48,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.34,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 911,
+        "standard": -4.5,
+        "home_odds": 1.69,
+        "away_odds": 1.79,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.69,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -4.5,
+            "cover": true,
+            "hit_odds": 1.69
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 911,
+        "standard": 174.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": 183,
+        "result": "OVER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 911,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M1029",
+      "seq": 1029,
+      "date": "2026-10-28 19:00",
+      "round": "프로토 승부식 128회차",
+      "round_ts": 260128,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 95,
+      "away_score": 90,
+      "score": "95:90",
+      "margin": 5,
+      "total_points": 185,
+      "win_lose": {
+        "match_no": 1029,
+        "home_odds": 1.54,
+        "away_odds": 2.0,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.54,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 1029,
+        "standard": -2.5,
+        "home_odds": 1.76,
+        "away_odds": 1.72,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.76,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": true,
+            "hit_odds": 1.82
+          },
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1029,
+        "standard": 174.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": 185,
+        "result": "OVER",
+        "hit_odds": 1.71,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1029,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M1261",
+      "seq": 1261,
+      "date": "2026-10-29 19:00",
+      "round": "프로토 승부식 128회차",
+      "round_ts": 260128,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "부산KCC",
+      "status": "종료",
+      "home_score": 96,
+      "away_score": 89,
+      "score": "96:89",
+      "margin": 7,
+      "total_points": 185,
+      "win_lose": {
+        "match_no": 1261,
+        "home_odds": 2.63,
+        "away_odds": 1.3,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.63,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 1261,
+        "standard": 5.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.74,
+        "line_count": 3,
+        "line_history": [
+          {
+            "standard": 3.5,
+            "cover": true,
+            "hit_odds": 1.76
+          },
+          {
+            "standard": 4.5,
+            "cover": true,
+            "hit_odds": 1.8
+          },
+          {
+            "standard": 5.5,
+            "cover": true,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1261,
+        "standard": 176.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
+        "total": 185,
+        "result": "OVER",
+        "hit_odds": 1.74,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1261,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M1325",
+      "seq": 1325,
+      "date": "2026-10-30 19:00",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "KBL",
+      "home": "고양소노",
+      "away": "서울삼성",
+      "status": "종료",
+      "home_score": 87,
+      "away_score": 95,
+      "score": "87:95",
+      "margin": -8,
+      "total_points": 182,
+      "win_lose": {
+        "match_no": 1325,
+        "home_odds": 1.52,
+        "away_odds": 2.03,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.03,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 1325,
+        "standard": -3.5,
+        "home_odds": 1.71,
+        "away_odds": 1.77,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1325,
+        "standard": 171.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 182,
+        "result": "OVER",
+        "hit_odds": 1.71,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1325,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M1493",
+      "seq": 1493,
+      "date": "2026-10-31 14:00",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 90,
+      "away_score": 74,
+      "score": "90:74",
+      "margin": 16,
+      "total_points": 164,
+      "win_lose": {
+        "match_no": 1493,
+        "home_odds": 1.88,
+        "away_odds": 1.62,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 1.88,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 1493,
+        "standard": 1.5,
+        "home_odds": 1.75,
+        "away_odds": 1.73,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.75,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": true,
+            "hit_odds": 1.75
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1493,
+        "standard": 182.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 164,
+        "result": "UNDER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1493,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M1498",
+      "seq": 1498,
+      "date": "2026-10-31 14:00",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 90,
+      "away_score": 92,
+      "score": "90:92",
+      "margin": -2,
+      "total_points": 182,
+      "win_lose": {
+        "match_no": 1498,
+        "home_odds": 1.39,
+        "away_odds": 2.33,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.33,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 1498,
+        "standard": -4.5,
+        "home_odds": 1.71,
+        "away_odds": 1.77,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -4.5,
+            "cover": false,
+            "hit_odds": 1.77
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1498,
+        "standard": 164.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 182,
+        "result": "OVER",
+        "hit_odds": 1.72,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1498,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M1539",
+      "seq": 1539,
+      "date": "2026-10-31 16:30",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "울산모비",
+      "status": "종료",
+      "home_score": 94,
+      "away_score": 67,
+      "score": "94:67",
+      "margin": 27,
+      "total_points": 161,
+      "win_lose": {
+        "match_no": 1539,
+        "home_odds": 1.06,
+        "away_odds": 4.85,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.06,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 1539,
+        "standard": -11.5,
+        "home_odds": 1.8,
+        "away_odds": 1.68,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.8,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -10.5,
+            "cover": true,
+            "hit_odds": 1.76
+          },
+          {
+            "standard": -11.5,
+            "cover": true,
+            "hit_odds": 1.8
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1539,
+        "standard": 167.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
+        "total": 161,
+        "result": "UNDER",
+        "hit_odds": 1.74,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1539,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M1864",
+      "seq": 1864,
+      "date": "2026-11-01 14:00",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "KBL",
+      "home": "고양소노",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 96,
+      "away_score": 103,
+      "score": "96:103",
+      "margin": -7,
+      "total_points": 199,
+      "win_lose": {
+        "match_no": 1864,
+        "home_odds": 1.91,
+        "away_odds": 1.6,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.6,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 1864,
+        "standard": 1.5,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.7,
+        "line_count": 3,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": false,
+            "hit_odds": 1.7
+          },
+          {
+            "standard": -1.5,
+            "cover": false,
+            "hit_odds": 1.7
+          },
+          {
+            "standard": 1.5,
+            "cover": false,
+            "hit_odds": 1.7
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1864,
+        "standard": 174.5,
+        "over_odds": 1.73,
+        "under_odds": 1.75,
+        "total": 199,
+        "result": "OVER",
+        "hit_odds": 1.73,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 1864,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M1869",
+      "seq": 1869,
+      "date": "2026-11-01 14:00",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "KBL",
+      "home": "창원LG",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 98,
+      "away_score": 104,
+      "score": "98:104",
+      "margin": -6,
+      "total_points": 202,
+      "win_lose": {
+        "match_no": 1869,
+        "home_odds": 1.33,
+        "away_odds": 2.52,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.52,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 1869,
+        "standard": -5.5,
+        "home_odds": 1.77,
+        "away_odds": 1.71,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.71,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -4.5,
+            "cover": false,
+            "hit_odds": 1.78
+          },
+          {
+            "standard": -5.5,
+            "cover": false,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1869,
+        "standard": 176.5,
+        "over_odds": 1.73,
+        "under_odds": 1.75,
+        "total": 202,
+        "result": "OVER",
+        "hit_odds": 1.73,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1869,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M1899",
+      "seq": 1899,
+      "date": "2026-11-01 16:30",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "KBL",
+      "home": "서울삼성",
+      "away": "서울SK",
+      "status": "종료",
+      "home_score": 76,
+      "away_score": 90,
+      "score": "76:90",
+      "margin": -14,
+      "total_points": 166,
+      "win_lose": {
+        "match_no": 1899,
+        "home_odds": 1.87,
+        "away_odds": 1.63,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.63,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 1899,
+        "standard": 1.5,
+        "home_odds": 1.75,
+        "away_odds": 1.73,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.73,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": false,
+            "hit_odds": 1.73
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1899,
+        "standard": 167.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 166,
+        "result": "UNDER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1899,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M2056",
+      "seq": 2056,
+      "date": "2026-11-02 19:00",
+      "round": "프로토 승부식 130회차",
+      "round_ts": 260130,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "안양정관",
+      "status": "종료",
+      "home_score": 71,
+      "away_score": 77,
+      "score": "71:77",
+      "margin": -6,
+      "total_points": 148,
+      "win_lose": {
+        "match_no": 2056,
+        "home_odds": 1.91,
+        "away_odds": 1.6,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.6,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 2056,
+        "standard": 2.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.74,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 2.5,
+            "cover": false,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2056,
+        "standard": 163.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 148,
+        "result": "UNDER",
+        "hit_odds": 1.76,
+        "line_count": 3
+      },
+      "w5": {
+        "match_no": 2056,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M2245",
+      "seq": 2245,
+      "date": "2026-11-03 19:00",
+      "round": "프로토 승부식 130회차",
+      "round_ts": 260130,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 105,
+      "away_score": 102,
+      "score": "105:102",
+      "margin": 3,
+      "total_points": 207,
+      "win_lose": {
+        "match_no": 2245,
+        "home_odds": 1.43,
+        "away_odds": 2.22,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.43,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 2245,
+        "standard": -3.5,
+        "home_odds": 1.72,
+        "away_odds": 1.76,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2245,
+        "standard": 183.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 207,
+        "result": "OVER",
+        "hit_odds": 1.72,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 2245,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M2411",
+      "seq": 2411,
+      "date": "2026-11-04 19:00",
+      "round": "프로토 승부식 131회차",
+      "round_ts": 260131,
+      "league": "KBL",
+      "home": "서울SK",
+      "away": "한국가스",
+      "status": "종료",
+      "home_score": 76,
+      "away_score": 82,
+      "score": "76:82",
+      "margin": -6,
+      "total_points": 158,
+      "win_lose": {
+        "match_no": 2411,
+        "home_odds": 1.19,
+        "away_odds": 3.24,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 3.24,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 2411,
+        "standard": -6.5,
+        "home_odds": 1.72,
+        "away_odds": 1.76,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -6.5,
+            "cover": false,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2411,
+        "standard": 166.5,
+        "over_odds": 1.76,
+        "under_odds": 1.72,
+        "total": 158,
+        "result": "UNDER",
+        "hit_odds": 1.72,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 2411,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M2623",
+      "seq": 2623,
+      "date": "2026-11-05 19:00",
+      "round": "프로토 승부식 131회차",
+      "round_ts": 260131,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "서울삼성",
+      "status": "종료",
+      "home_score": 76,
+      "away_score": 81,
+      "score": "76:81",
+      "margin": -5,
+      "total_points": 157,
+      "win_lose": {
+        "match_no": 2623,
+        "home_odds": 3.31,
+        "away_odds": 1.18,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.18,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 2623,
+        "standard": 8.5,
+        "home_odds": 1.68,
+        "away_odds": 1.8,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.68,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 8.5,
+            "cover": true,
+            "hit_odds": 1.68
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2623,
+        "standard": 171.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
+        "total": 157,
+        "result": "UNDER",
+        "hit_odds": 1.74,
+        "line_count": 3
+      },
+      "w5": {
+        "match_no": 2623,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M2847",
+      "seq": 2847,
+      "date": "2026-11-06 19:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "KBL",
+      "home": "안양정관",
+      "away": "서울SK",
+      "status": "종료",
+      "home_score": 83,
+      "away_score": 79,
+      "score": "83:79",
+      "margin": 4,
+      "total_points": 162,
+      "win_lose": {
+        "match_no": 2847,
+        "home_odds": 1.95,
+        "away_odds": 1.57,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 1.95,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 2847,
+        "standard": 1.5,
+        "home_odds": 1.82,
+        "away_odds": 1.67,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.82,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": true,
+            "hit_odds": 1.82
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2847,
+        "standard": 163.5,
+        "over_odds": 1.75,
+        "under_odds": 1.73,
+        "total": 162,
+        "result": "UNDER",
+        "hit_odds": 1.73,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 2847,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M2995",
+      "seq": 2995,
+      "date": "2026-11-07 14:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "KBL",
+      "home": "창원LG",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 86,
+      "away_score": 85,
+      "score": "86:85",
+      "margin": 1,
+      "total_points": 171,
+      "win_lose": {
+        "match_no": 2995,
+        "home_odds": 1.37,
+        "away_odds": 2.38,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.37,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 2995,
+        "standard": -4.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.74,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.71
+          },
+          {
+            "standard": -4.5,
+            "cover": false,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2995,
+        "standard": 179.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 171,
+        "result": "UNDER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 2995,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M3000",
+      "seq": 3000,
+      "date": "2026-11-07 14:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "KBL",
+      "home": "원주DB",
+      "away": "서울삼성",
+      "status": "종료",
+      "home_score": 84,
+      "away_score": 76,
+      "score": "84:76",
+      "margin": 8,
+      "total_points": 160,
+      "win_lose": {
+        "match_no": 3000,
+        "home_odds": 1.63,
+        "away_odds": 1.87,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.63,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3000,
+        "standard": -1.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.74,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -1.5,
+            "cover": true,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3000,
+        "standard": 177.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 160,
+        "result": "UNDER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3000,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M3055",
+      "seq": 3055,
+      "date": "2026-11-07 16:30",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "KBL",
+      "home": "KT소닉붐",
+      "away": "한국가스",
+      "status": "종료",
+      "home_score": 92,
+      "away_score": 81,
+      "score": "92:81",
+      "margin": 11,
+      "total_points": 173,
+      "win_lose": {
+        "match_no": 3055,
+        "home_odds": 1.53,
+        "away_odds": 2.02,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.53,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3055,
+        "standard": -2.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.74,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3055,
+        "standard": 168.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
+        "total": 173,
+        "result": "OVER",
+        "hit_odds": 1.74,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3055,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M3363",
+      "seq": 3363,
+      "date": "2026-11-08 14:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "KBL",
+      "home": "서울SK",
+      "away": "원주DB",
+      "status": "종료",
+      "home_score": 81,
+      "away_score": 65,
+      "score": "81:65",
+      "margin": 16,
+      "total_points": 146,
+      "win_lose": {
+        "match_no": 3363,
+        "home_odds": 1.47,
+        "away_odds": 2.13,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.47,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3363,
+        "standard": -3.5,
+        "home_odds": 1.72,
+        "away_odds": 1.76,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.72,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": true,
+            "hit_odds": 1.72
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3363,
+        "standard": 176.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 146,
+        "result": "UNDER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3363,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M3368",
+      "seq": 3368,
+      "date": "2026-11-08 14:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "안양정관",
+      "status": "종료",
+      "home_score": 85,
+      "away_score": 91,
+      "score": "85:91",
+      "margin": -6,
+      "total_points": 176,
+      "win_lose": {
+        "match_no": 3368,
+        "home_odds": 2.67,
+        "away_odds": 1.29,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.29,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3368,
+        "standard": 5.5,
+        "home_odds": 1.73,
+        "away_odds": 1.75,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.75,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 5.5,
+            "cover": false,
+            "hit_odds": 1.75
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3368,
+        "standard": 165.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 176,
+        "result": "OVER",
+        "hit_odds": 1.71,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3368,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M3450",
+      "seq": 3450,
+      "date": "2026-11-08 16:30",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "KBL",
+      "home": "창원LG",
+      "away": "부산KCC",
+      "status": "종료",
+      "home_score": 74,
+      "away_score": 84,
+      "score": "74:84",
+      "margin": -10,
+      "total_points": 158,
+      "win_lose": {
+        "match_no": 3450,
+        "home_odds": 1.47,
+        "away_odds": 2.13,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.13,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 3450,
+        "standard": -3.5,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.7,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.7
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3450,
+        "standard": 178.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 158,
+        "result": "UNDER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3450,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M3621",
+      "seq": 3621,
+      "date": "2026-11-09 19:00",
+      "round": "프로토 승부식 133회차",
+      "round_ts": 260133,
+      "league": "KBL",
+      "home": "서울삼성",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 85,
+      "away_score": 78,
+      "score": "85:78",
+      "margin": 7,
+      "total_points": 163,
+      "win_lose": {
+        "match_no": 3621,
+        "home_odds": 1.63,
+        "away_odds": 1.87,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.63,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3621,
+        "standard": -2.5,
+        "home_odds": 1.79,
+        "away_odds": 1.69,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.79,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": true,
+            "hit_odds": 1.79
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3621,
+        "standard": 168.5,
+        "over_odds": 1.66,
+        "under_odds": 1.83,
+        "total": 163,
+        "result": "UNDER",
+        "hit_odds": 1.83,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3621,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M3671",
+      "seq": 3671,
+      "date": "2026-11-10 19:00",
+      "round": "프로토 승부식 133회차",
+      "round_ts": 260133,
+      "league": "KBL",
+      "home": "울산모비",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 79,
+      "away_score": 86,
+      "score": "79:86",
+      "margin": -7,
+      "total_points": 165,
+      "win_lose": {
+        "match_no": 3671,
+        "home_odds": 1.92,
+        "away_odds": 1.59,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.59,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3671,
+        "standard": 1.5,
+        "home_odds": 1.79,
+        "away_odds": 1.69,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.69,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": false,
+            "hit_odds": 1.69
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3671,
+        "standard": 177.5,
+        "over_odds": 1.82,
+        "under_odds": 1.67,
+        "total": 165,
+        "result": "UNDER",
+        "hit_odds": 1.67,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3671,
+        "result": "패"
+      }
+    },
+    {
+      "id": "M3728",
+      "seq": 3728,
+      "date": "2026-11-11 19:00",
+      "round": "프로토 승부식 134회차",
+      "round_ts": 260134,
+      "league": "KBL",
+      "home": "창원LG",
+      "away": "서울SK",
+      "status": "종료",
+      "home_score": 101,
+      "away_score": 72,
+      "score": "101:72",
+      "margin": 29,
+      "total_points": 173,
+      "win_lose": {
+        "match_no": 3728,
+        "home_odds": 1.94,
+        "away_odds": 1.58,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 1.94,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 3728,
+        "standard": 1.5,
+        "home_odds": 1.8,
+        "away_odds": 1.68,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.8,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": true,
+            "hit_odds": 1.8
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3728,
+        "standard": 166.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 173,
+        "result": "OVER",
+        "hit_odds": 1.71,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 3728,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M3808",
+      "seq": 3808,
+      "date": "2026-11-12 19:00",
+      "round": "프로토 승부식 134회차",
+      "round_ts": 260134,
+      "league": "KBL",
+      "home": "한국가스",
+      "away": "고양소노",
+      "status": "종료",
+      "home_score": 87,
+      "away_score": 88,
+      "score": "87:88",
+      "margin": -1,
+      "total_points": 175,
+      "win_lose": {
+        "match_no": 3808,
+        "home_odds": 1.83,
+        "away_odds": 1.66,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.66,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3808,
+        "standard": 1.5,
+        "home_odds": 1.71,
+        "away_odds": 1.77,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.71,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": true,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3808,
+        "standard": 168.5,
+        "over_odds": 1.78,
+        "under_odds": 1.7,
+        "total": 175,
+        "result": "OVER",
+        "hit_odds": 1.78,
+        "line_count": 3
+      },
+      "w5": {
+        "match_no": 3808,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M3899",
+      "seq": 3899,
+      "date": "2026-11-13 19:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "KBL",
+      "home": "원주DB",
+      "away": "KT소닉붐",
+      "status": "종료",
+      "home_score": 94,
+      "away_score": 83,
+      "score": "94:83",
+      "margin": 11,
+      "total_points": 177,
+      "win_lose": {
+        "match_no": 3899,
+        "home_odds": 1.31,
+        "away_odds": 2.59,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.31,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3899,
+        "standard": -5.5,
+        "home_odds": 1.75,
+        "away_odds": 1.73,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.75,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -5.5,
+            "cover": true,
+            "hit_odds": 1.75
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3899,
+        "standard": 177.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 177,
+        "result": "UNDER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3899,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M4061",
+      "seq": 4061,
+      "date": "2026-11-14 14:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "서울SK",
+      "status": "종료",
+      "home_score": 75,
+      "away_score": 70,
+      "score": "75:70",
+      "margin": 5,
+      "total_points": 145,
+      "win_lose": {
+        "match_no": 4061,
+        "home_odds": 1.77,
+        "away_odds": 1.71,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 1.77,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 4061,
+        "standard": 1.5,
+        "home_odds": 1.71,
+        "away_odds": 1.77,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.71,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": true,
+            "hit_odds": 1.71
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 4061,
+        "standard": 175.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": 145,
+        "result": "UNDER",
+        "hit_odds": 1.71,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 4061,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M4066",
+      "seq": 4066,
+      "date": "2026-11-14 14:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "KBL",
+      "home": "창원LG",
+      "away": "울산모비",
+      "status": "종료",
+      "home_score": 78,
+      "away_score": 79,
+      "score": "78:79",
+      "margin": -1,
+      "total_points": 157,
+      "win_lose": {
+        "match_no": 4066,
+        "home_odds": 1.22,
+        "away_odds": 3.03,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 3.03,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 4066,
+        "standard": -6.5,
+        "home_odds": 1.72,
+        "away_odds": 1.76,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.76,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -6.5,
+            "cover": false,
+            "hit_odds": 1.76
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 4066,
+        "standard": 173.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": 157,
+        "result": "UNDER",
+        "hit_odds": 1.71,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 4066,
+        "result": "5"
+      }
+    },
+    {
+      "id": "M4089",
+      "seq": 4089,
+      "date": "2026-11-14 16:30",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "KBL",
+      "home": "서울삼성",
+      "away": "안양정관",
+      "status": "종료",
+      "home_score": 80,
+      "away_score": 87,
+      "score": "80:87",
+      "margin": -7,
+      "total_points": 167,
+      "win_lose": {
+        "match_no": 4089,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.7,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 4089,
+        "standard": 1.5,
+        "home_odds": 1.67,
+        "away_odds": 1.82,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.82,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": false,
+            "hit_odds": 1.82
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 4089,
+        "standard": 163.5,
+        "over_odds": 1.69,
+        "under_odds": 1.79,
+        "total": 167,
+        "result": "OVER",
+        "hit_odds": 1.69,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 4089,
+        "result": "패"
+      }
+    }
+  ],
+  "womens": [
+    {
+      "id": "W1882",
+      "seq": 1882,
+      "date": "2026-11-01 16:00",
+      "round": "프로토 승부식 129회차",
+      "round_ts": 260129,
+      "league": "WKBL",
+      "home": "KB스타즈",
+      "away": "BNK썸",
+      "status": "종료",
+      "home_score": 53,
+      "away_score": 82,
+      "score": "53:82",
+      "margin": -29,
+      "total_points": 135,
+      "win_lose": {
+        "match_no": 1882,
+        "home_odds": 2.11,
+        "away_odds": 1.48,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.48,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 1882,
+        "standard": 2.5,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.7,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -4.5,
+            "cover": false,
+            "hit_odds": 1.7
+          },
+          {
+            "standard": 2.5,
+            "cover": false,
+            "hit_odds": 1.7
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 1882,
+        "standard": 137.5,
+        "over_odds": 1.73,
+        "under_odds": 1.75,
+        "total": 135,
+        "result": "UNDER",
+        "hit_odds": 1.75,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 1882,
+        "result": "패"
+      }
+    },
+    {
+      "id": "W2061",
+      "seq": 2061,
+      "date": "2026-11-02 19:00",
+      "round": "프로토 승부식 130회차",
+      "round_ts": 260130,
+      "league": "WKBL",
+      "home": "삼성생명",
+      "away": "하나은행",
+      "status": "종료",
+      "home_score": 84,
+      "away_score": 66,
+      "score": "84:66",
+      "margin": 18,
+      "total_points": 150,
+      "win_lose": {
+        "match_no": 2061,
+        "home_odds": 2.59,
+        "away_odds": 1.31,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 2.59,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 2061,
+        "standard": 5.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.74,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": 4.5,
+            "cover": true,
+            "hit_odds": 1.79
+          },
+          {
+            "standard": 5.5,
+            "cover": true,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2061,
+        "standard": 132.5,
+        "over_odds": 1.73,
+        "under_odds": 1.75,
+        "total": 150,
+        "result": "OVER",
+        "hit_odds": 1.73,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 2061,
+        "result": "승"
+      }
+    },
+    {
+      "id": "W2416",
+      "seq": 2416,
+      "date": "2026-11-04 19:00",
+      "round": "프로토 승부식 131회차",
+      "round_ts": 260131,
+      "league": "WKBL",
+      "home": "신한은행",
+      "away": "우리은행",
+      "status": "종료",
+      "home_score": 65,
+      "away_score": 58,
+      "score": "65:58",
+      "margin": 7,
+      "total_points": 123,
+      "win_lose": {
+        "match_no": 2416,
+        "home_odds": 3.57,
+        "away_odds": 1.15,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 3.57,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 2416,
+        "standard": 7.5,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.78,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": 6.5,
+            "cover": true,
+            "hit_odds": 1.84
+          },
+          {
+            "standard": 7.5,
+            "cover": true,
+            "hit_odds": 1.78
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2416,
+        "standard": 130.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 123,
+        "result": "UNDER",
+        "hit_odds": 1.76,
+        "line_count": 3
+      },
+      "w5": {
+        "match_no": 2416,
+        "result": "승"
+      }
+    },
+    {
+      "id": "W2852",
+      "seq": 2852,
+      "date": "2026-11-06 19:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "WKBL",
+      "home": "하나은행",
+      "away": "KB스타즈",
+      "status": "종료",
+      "home_score": 69,
+      "away_score": 74,
+      "score": "69:74",
+      "margin": -5,
+      "total_points": 143,
+      "win_lose": {
+        "match_no": 2852,
+        "home_odds": 1.41,
+        "away_odds": 2.27,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.27,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 2852,
+        "standard": -3.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.74,
+        "line_count": 2,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": false,
+            "hit_odds": 1.76
+          },
+          {
+            "standard": -3.5,
+            "cover": false,
+            "hit_odds": 1.74
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 2852,
+        "standard": 137.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 143,
+        "result": "OVER",
+        "hit_odds": 1.72,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 2852,
+        "result": "5"
+      }
+    },
+    {
+      "id": "W3005",
+      "seq": 3005,
+      "date": "2026-11-07 14:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "WKBL",
+      "home": "BNK썸",
+      "away": "신한은행",
+      "status": "종료",
+      "home_score": 59,
+      "away_score": 68,
+      "score": "59:68",
+      "margin": -9,
+      "total_points": 127,
+      "win_lose": {
+        "match_no": 3005,
+        "home_odds": 1.24,
+        "away_odds": 2.92,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.92,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 3005,
+        "standard": -6.5,
+        "home_odds": 1.79,
+        "away_odds": 1.69,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.69,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -6.5,
+            "cover": false,
+            "hit_odds": 1.69
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3005,
+        "standard": 135.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": 127,
+        "result": "UNDER",
+        "hit_odds": 1.71,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3005,
+        "result": "패"
+      }
+    },
+    {
+      "id": "W3026",
+      "seq": 3026,
+      "date": "2026-11-07 16:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "WKBL",
+      "home": "우리은행",
+      "away": "삼성생명",
+      "status": "종료",
+      "home_score": 65,
+      "away_score": 54,
+      "score": "65:54",
+      "margin": 11,
+      "total_points": 119,
+      "win_lose": {
+        "match_no": 3026,
+        "home_odds": 1.46,
+        "away_odds": 2.15,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.46,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3026,
+        "standard": -3.5,
+        "home_odds": 1.82,
+        "away_odds": 1.67,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.82,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -3.5,
+            "cover": true,
+            "hit_odds": 1.82
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3026,
+        "standard": 129.5,
+        "over_odds": 1.7,
+        "under_odds": 1.78,
+        "total": 119,
+        "result": "UNDER",
+        "hit_odds": 1.78,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3026,
+        "result": "승"
+      }
+    },
+    {
+      "id": "W3389",
+      "seq": 3389,
+      "date": "2026-11-08 16:00",
+      "round": "프로토 승부식 132회차",
+      "round_ts": 260132,
+      "league": "WKBL",
+      "home": "BNK썸",
+      "away": "하나은행",
+      "status": "종료",
+      "home_score": 73,
+      "away_score": 65,
+      "score": "73:65",
+      "margin": 8,
+      "total_points": 138,
+      "win_lose": {
+        "match_no": 3389,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "winner": "HOME",
+        "favorite": "AWAY",
+        "hit_odds": 1.78,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 3389,
+        "standard": 1.5,
+        "home_odds": 1.66,
+        "away_odds": 1.83,
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.66,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 1.5,
+            "cover": true,
+            "hit_odds": 1.66
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3389,
+        "standard": 135.5,
+        "over_odds": 1.75,
+        "under_odds": 1.73,
+        "total": 138,
+        "result": "OVER",
+        "hit_odds": 1.75,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3389,
+        "result": "승"
+      }
+    },
+    {
+      "id": "W3626",
+      "seq": 3626,
+      "date": "2026-11-09 19:00",
+      "round": "프로토 승부식 133회차",
+      "round_ts": 260133,
+      "league": "WKBL",
+      "home": "KB스타즈",
+      "away": "우리은행",
+      "status": "종료",
+      "home_score": 51,
+      "away_score": 57,
+      "score": "51:57",
+      "margin": -6,
+      "total_points": 108,
+      "win_lose": {
+        "match_no": 3626,
+        "home_odds": 1.8,
+        "away_odds": 1.68,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.68,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3626,
+        "standard": 1.5,
+        "home_odds": 1.67,
+        "away_odds": 1.82,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.82,
+        "line_count": 3,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": false,
+            "hit_odds": 1.68
+          },
+          {
+            "standard": -1.5,
+            "cover": false,
+            "hit_odds": 1.68
+          },
+          {
+            "standard": 1.5,
+            "cover": false,
+            "hit_odds": 1.82
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3626,
+        "standard": 130.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 108,
+        "result": "UNDER",
+        "hit_odds": 1.77,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 3626,
+        "result": "패"
+      }
+    },
+    {
+      "id": "W3733",
+      "seq": 3733,
+      "date": "2026-11-11 19:00",
+      "round": "프로토 승부식 134회차",
+      "round_ts": 260134,
+      "league": "WKBL",
+      "home": "신한은행",
+      "away": "삼성생명",
+      "status": "종료",
+      "home_score": 51,
+      "away_score": 54,
+      "score": "51:54",
+      "margin": -3,
+      "total_points": 105,
+      "win_lose": {
+        "match_no": 3733,
+        "home_odds": 1.44,
+        "away_odds": 2.2,
+        "winner": "AWAY",
+        "favorite": "HOME",
+        "hit_odds": 2.2,
+        "hit_type": "역배"
+      },
+      "handicap": {
+        "match_no": 3733,
+        "standard": -2.5,
+        "home_odds": 1.64,
+        "away_odds": 1.85,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.85,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -2.5,
+            "cover": false,
+            "hit_odds": 1.85
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3733,
+        "standard": 131.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": 105,
+        "result": "UNDER",
+        "hit_odds": 1.76,
+        "line_count": 2
+      },
+      "w5": {
+        "match_no": 3733,
+        "result": "5"
+      }
+    },
+    {
+      "id": "W3904",
+      "seq": 3904,
+      "date": "2026-11-13 19:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "WKBL",
+      "home": "우리은행",
+      "away": "BNK썸",
+      "status": "종료",
+      "home_score": 53,
+      "away_score": 52,
+      "score": "53:52",
+      "margin": 1,
+      "total_points": 105,
+      "win_lose": {
+        "match_no": 3904,
+        "home_odds": 1.58,
+        "away_odds": 1.94,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.58,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 3904,
+        "standard": -1.5,
+        "home_odds": 1.7,
+        "away_odds": 1.78,
+        "home_cover": false,
+        "result": "플핸",
+        "hit_odds": 1.78,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -1.5,
+            "cover": false,
+            "hit_odds": 1.78
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 3904,
+        "standard": 127.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 105,
+        "result": "UNDER",
+        "hit_odds": 1.77,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 3904,
+        "result": "5"
+      }
+    },
+    {
+      "id": "W4071",
+      "seq": 4071,
+      "date": "2026-11-14 14:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "WKBL",
+      "home": "삼성생명",
+      "away": "KB스타즈",
+      "status": "종료",
+      "home_score": 79,
+      "away_score": 72,
+      "score": "79:72",
+      "margin": 7,
+      "total_points": 151,
+      "win_lose": {
+        "match_no": 4071,
+        "home_odds": 1.72,
+        "away_odds": 1.76,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.72,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 4071,
+        "standard": -1.5,
+        "home_odds": 1.85,
+        "away_odds": 1.64,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.85,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": -1.5,
+            "cover": true,
+            "hit_odds": 1.85
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 4071,
+        "standard": 131.5,
+        "over_odds": 1.76,
+        "under_odds": 1.72,
+        "total": 151,
+        "result": "OVER",
+        "hit_odds": 1.76,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 4071,
+        "result": "승"
+      }
+    },
+    {
+      "id": "W4080",
+      "seq": 4080,
+      "date": "2026-11-14 16:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "WKBL",
+      "home": "하나은행",
+      "away": "신한은행",
+      "status": "종료",
+      "home_score": 73,
+      "away_score": 87,
+      "score": "73:87",
+      "margin": -14,
+      "total_points": 160,
+      "win_lose": {
+        "match_no": 4080,
+        "home_odds": 2.13,
+        "away_odds": 1.47,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.47,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 4080,
+        "standard": 2.5,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.7,
+        "line_count": 1,
+        "line_history": [
+          {
+            "standard": 2.5,
+            "cover": false,
+            "hit_odds": 1.7
+          }
+        ]
+      },
+      "under_over": {
+        "match_no": 4080,
+        "standard": 130.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": 160,
+        "result": "OVER",
+        "hit_odds": 1.71,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 4080,
+        "result": "패"
+      }
+    }
+  ]
+}

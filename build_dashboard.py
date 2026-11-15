@@ -96,11 +96,49 @@ def badge(text, kind):
 
 
 def match_card(m, idx=None, focus=None):
-    res_home = m["win_lose"]["winner"] == "HOME"
-    ht = m["win_lose"]["hit_type"] or ""
-    hcp = m["handicap"]
-    uo = m["under_over"]
-    w5 = m["w5"]
+    is_done = m.get("status") == "종료"
+    wl = m.get("win_lose") or {}
+    hcp = m.get("handicap")
+    uo = m.get("under_over")
+    w5 = m.get("w5")
+
+    if not is_done:
+        home_cls = "side" + (" focus" if focus == m["home"] else "")
+        away_cls = "side" + (" focus" if focus == m["away"] else "")
+        badges = [badge("🕒 발매중", "w5-mid")]
+        if wl.get("home_odds") is not None:
+            badges.append(badge(f"승 {odds_txt(wl.get('home_odds'))} · 패 {odds_txt(wl.get('away_odds'))}", "fav"))
+        if hcp and hcp.get("standard") is not None:
+            std = hcp["standard"]
+            sign = "+" if std > 0 else ""
+            badges.append(badge(f"H {sign}{std} ({odds_txt(hcp.get('home_odds'))}/{odds_txt(hcp.get('away_odds'))})", "ma"))
+        if uo and uo.get("standard") is not None:
+            badges.append(badge(f"U/O {uo['standard']} ({odds_txt(uo.get('under_odds'))}/{odds_txt(uo.get('over_odds'))})", "under"))
+        if w5 and w5.get("win_odds") is not None:
+            badges.append(badge(f"승5패 {odds_txt(w5.get('win_odds'))}/{odds_txt(w5.get('draw5_odds'))}/{odds_txt(w5.get('lose_odds'))}", "w5-mid"))
+        return f"""
+      <article class="mcard">
+        <div class="mcard-top">
+          <span class="mno">예정</span>
+          <span class="mdate">{m['date'][5:10]} {m['date'][11:]} · {m['round'].replace('프로토 승부식 ', '')}</span>
+          <span class="mseq">#{m['seq']}</span>
+        </div>
+        <div class="mcard-main">
+          <div class="{home_cls}">
+            <span class="tname" style="color:{color(m['home'])}">{short(m['home'])}</span>
+            <span class="tscore">-</span>
+          </div>
+          <span class="vs">vs</span>
+          <div class="{away_cls}">
+            <span class="tscore">-</span>
+            <span class="tname" style="color:{color(m['away'])}">{short(m['away'])}</span>
+          </div>
+        </div>
+        <div class="mcard-badges">{''.join(badges)}</div>
+      </article>"""
+
+    res_home = wl["winner"] == "HOME"
+    ht = wl["hit_type"] or ""
     hs, as_ = m["home_score"], m["away_score"]
 
     home_cls = "side win" if res_home else "side"
@@ -153,10 +191,29 @@ def match_card(m, idx=None, focus=None):
 
 def ohlc_row(m, idx):
     """전체 뷰 누계 표 한 줄"""
-    ht = m["win_lose"]["hit_type"] or ""
-    hcp = m["handicap"]
-    uo = m["under_over"]
-    res = "홈" if m["win_lose"]["winner"] == "HOME" else "원정"
+    wl = m.get("win_lose") or {}
+    hcp = m.get("handicap")
+    uo = m.get("under_over")
+    if m.get("status") != "종료":
+        hc = "-"
+        if hcp and hcp.get("standard") is not None:
+            std = hcp["standard"]
+            hc = f"H{'' if std < 0 else '+'}{std}"
+        uo_t = f"{uo['standard']}" if uo and uo.get("standard") is not None else "-"
+        odds_s = f"{odds_txt(wl.get('home_odds'))}/{odds_txt(wl.get('away_odds'))}"
+        return f"""
+        <tr>
+          <td class="c-idx">예정</td>
+          <td class="c-date">{m['date'][5:10]}</td>
+          <td class="c-team"><b style="color:{color(m['home'])}">{short(m['home'])}</b> <span class="vsx">vs</span> <b style="color:{color(m['away'])}">{short(m['away'])}</b></td>
+          <td class="c-score">-<span class="vsx">:</span>-</td>
+          <td class="c-res">예정</td>
+          <td class="c-fav"><span class="mini">{odds_s}</span></td>
+          <td class="c-hc">{hc}</td>
+          <td class="c-uo">{uo_t}</td>
+        </tr>"""
+    ht = wl["hit_type"] or ""
+    res = "홈" if wl["winner"] == "HOME" else "원정"
     hc = "-"
     if hcp:
         std = hcp["standard"]
@@ -180,6 +237,7 @@ def ohlc_row(m, idx):
 # ---------------------------------------------------------------- 통계
 
 def global_stats(matches):
+    matches = [m for m in matches if m.get("status") == "종료"]
     n = len(matches)
     fav = sum(1 for m in matches if m["win_lose"]["hit_type"] == "정배")
     over = sum(1 for m in matches if m["under_over"] and m["under_over"]["result"] == "OVER")
@@ -199,7 +257,7 @@ def global_stats(matches):
 
 
 def team_stats(matches, team):
-    tms = team_matches(matches, team)
+    tms = [m for m in team_matches(matches, team) if m.get("status") == "종료"]
     n = len(tms)
     w = sum(1 for m in tms if won(m, team))
     fav_flags = [m["win_lose"]["hit_type"] == "정배" for m in tms]
@@ -273,10 +331,15 @@ def stat_box(label, value, sub, cls):
 def team_view(matches, team, idx, prefix, all_count):
     st = team_stats(matches, team)
     tms = team_matches(matches, team)
-    total_n = len(tms)
+    done_n = sum(1 for m in tms if m.get("status") == "종료")
     rows = []
-    for i, m in enumerate(reversed(tms)):
-        rows.append(match_card(m, total_n - i, focus=team))
+    done_idx = done_n
+    for m in reversed(tms):
+        if m.get("status") == "종료":
+            rows.append(match_card(m, done_idx, focus=team))
+            done_idx -= 1
+        else:
+            rows.append(match_card(m, None, focus=team))
     fav_lbl = f"{st['fav_streak'][1]}연속 {st['fav_streak'][0]}"
     ma_lbl = f"{st['ma_streak'][1]}연속 {st['ma_streak'][0]}"
     uo_lbl = f"{st['uo_streak'][1]}연속 {st['uo_streak'][0]}"
@@ -320,8 +383,15 @@ def team_view(matches, team, idx, prefix, all_count):
 
 def overall_view(matches, prefix, title, sub):
     st = global_stats(matches)
-    total_n = len(matches)
-    rows = ''.join(ohlc_row(m, total_n - i) for i, m in enumerate(reversed(matches)))
+    done_idx = sum(1 for m in matches if m.get("status") == "종료")
+    row_list = []
+    for m in reversed(matches):
+        if m.get("status") == "종료":
+            row_list.append(ohlc_row(m, done_idx))
+            done_idx -= 1
+        else:
+            row_list.append(ohlc_row(m, None))
+    rows = ''.join(row_list)
     fav_streak = f"{st['fav_streak'][1]}연속 {st['fav_streak'][0]}"
     uo_streak = f"{st['uo_streak'][1]}연속 {st['uo_streak'][0]}"
     return f"""

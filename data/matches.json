@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-15 04:29",
-  "source": "m.betman.co.kr 프로토 승부식 적중결과 (winrstDetl.do) DOM",
+  "last_updated": "2026-11-15 09:05",
+  "source": "m.betman.co.kr 프로토 승부식 적중결과 (winrstDetl.do) & 발매중게임 (gameSlip.do) DOM",
   "labels": {
     "handicap": "마핸/플핸 (홈 기준 '-' 핸디캡 팀이 기준점을 넘기면 마핸, '+' 핸디캡 팀이 지켜내면 플핸)",
     "hit_type": "정배 = 마감 배당이 낮은 팀 적중 / 역배 = 마감 배당이 높은 팀 적중"
@@ -3984,6 +3984,156 @@
         "match_no": 4089,
         "result": "패"
       }
+    },
+    {
+      "id": "M4206",
+      "seq": 4206,
+      "date": "2026-11-15 14:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "KBL",
+      "home": "고양소노",
+      "away": "원주DB",
+      "status": "예정",
+      "home_score": null,
+      "away_score": null,
+      "score": null,
+      "margin": null,
+      "total_points": null,
+      "win_lose": {
+        "match_no": 4206,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "winner": null,
+        "favorite": "AWAY",
+        "hit_odds": null,
+        "hit_type": null
+      },
+      "handicap": {
+        "match_no": 4208,
+        "standard": 1.5,
+        "home_odds": 1.67,
+        "away_odds": 1.82,
+        "home_cover": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "under_over": {
+        "match_no": 4209,
+        "standard": 181.5,
+        "over_odds": 1.76,
+        "under_odds": 1.72,
+        "total": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "w5": {
+        "match_no": 4207,
+        "win_odds": 2.65,
+        "draw5_odds": 2.75,
+        "lose_odds": 2.45,
+        "result": null
+      }
+    },
+    {
+      "id": "M4232",
+      "seq": 4232,
+      "date": "2026-11-15 16:30",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "KBL",
+      "home": "창원LG",
+      "away": "KT소닉붐",
+      "status": "예정",
+      "home_score": null,
+      "away_score": null,
+      "score": null,
+      "margin": null,
+      "total_points": null,
+      "win_lose": {
+        "match_no": 4232,
+        "home_odds": 1.43,
+        "away_odds": 2.22,
+        "winner": null,
+        "favorite": "HOME",
+        "hit_odds": null,
+        "hit_type": null
+      },
+      "handicap": {
+        "match_no": 4234,
+        "standard": -3.5,
+        "home_odds": 1.72,
+        "away_odds": 1.76,
+        "home_cover": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "under_over": {
+        "match_no": 4235,
+        "standard": 170.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
+        "total": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "w5": {
+        "match_no": 4233,
+        "win_odds": 1.99,
+        "draw5_odds": 2.7,
+        "lose_odds": 3.6,
+        "result": null
+      }
+    },
+    {
+      "id": "M4237",
+      "seq": 4237,
+      "date": "2026-11-15 16:30",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "KBL",
+      "home": "부산KCC",
+      "away": "한국가스",
+      "status": "예정",
+      "home_score": null,
+      "away_score": null,
+      "score": null,
+      "margin": null,
+      "total_points": null,
+      "win_lose": {
+        "match_no": 4237,
+        "home_odds": 1.49,
+        "away_odds": 2.09,
+        "winner": null,
+        "favorite": "HOME",
+        "hit_odds": null,
+        "hit_type": null
+      },
+      "handicap": {
+        "match_no": 4239,
+        "standard": -2.5,
+        "home_odds": 1.69,
+        "away_odds": 1.79,
+        "home_cover": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "under_over": {
+        "match_no": 4240,
+        "standard": 169.5,
+        "over_odds": 1.77,
+        "under_odds": 1.71,
+        "total": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "w5": {
+        "match_no": 4238,
+        "win_odds": 2.1,
+        "draw5_odds": 2.7,
+        "lose_odds": 3.3,
+        "result": null
+      }
     }
   ],
   "womens": [
@@ -4687,6 +4837,56 @@
       "w5": {
         "match_no": 4080,
         "result": "패"
+      }
+    },
+    {
+      "id": "W4223",
+      "seq": 4223,
+      "date": "2026-11-15 16:00",
+      "round": "프로토 승부식 135회차",
+      "round_ts": 260135,
+      "league": "WKBL",
+      "home": "삼성생명",
+      "away": "BNK썸",
+      "status": "예정",
+      "home_score": null,
+      "away_score": null,
+      "score": null,
+      "margin": null,
+      "total_points": null,
+      "win_lose": {
+        "match_no": 4223,
+        "home_odds": 1.76,
+        "away_odds": 1.72,
+        "winner": null,
+        "favorite": "AWAY",
+        "hit_odds": null,
+        "hit_type": null
+      },
+      "handicap": {
+        "match_no": 4225,
+        "standard": 1.5,
+        "home_odds": 1.64,
+        "away_odds": 1.85,
+        "home_cover": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "under_over": {
+        "match_no": 4226,
+        "standard": 131.5,
+        "over_odds": 1.72,
+        "under_odds": 1.76,
+        "total": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "w5": {
+        "match_no": 4224,
+        "win_odds": 2.7,
+        "draw5_odds": 2.54,
+        "lose_odds": 2.6,
+        "result": null
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16 09:05",
+  "last_updated": "2026-11-17 08:05",
   "source": "m.betman.co.kr 프로토 승부식 적중결과 (winrstDetl.do) & 발매중게임 (gameSlip.do) DOM",
   "labels": {
     "handicap": "마핸/플핸 (홈 기준 '-' 핸디캡 팀이 기준점을 넘기면 마핸, '+' 핸디캡 팀이 지켜내면 플핸)",
@@ -4176,6 +4176,58 @@
       "league": "KBL",
       "home": "서울SK",
       "away": "울산모비",
+      "status": "종료",
+      "home_score": 92,
+      "away_score": 76,
+      "score": "92:76",
+      "margin": 16,
+      "total_points": 168,
+      "win_lose": {
+        "match_no": 4326,
+        "home_odds": 1.24,
+        "away_odds": 2.92,
+        "winner": "HOME",
+        "favorite": "HOME",
+        "hit_odds": 1.28,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 4328,
+        "standard": -6.5,
+        "home_odds": 1.77,
+        "away_odds": 1.71,
+        "home_cover": true,
+        "result": "마핸",
+        "hit_odds": 1.83,
+        "line_count": 1
+      },
+      "under_over": {
+        "match_no": 4329,
+        "standard": 167.5,
+        "over_odds": 1.73,
+        "under_odds": 1.75,
+        "total": 168,
+        "result": "OVER",
+        "hit_odds": 1.73,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 4327,
+        "win_odds": 1.65,
+        "draw5_odds": 2.85,
+        "lose_odds": 5.2,
+        "result": "승"
+      }
+    },
+    {
+      "id": "M4434",
+      "seq": 4434,
+      "date": "2026-11-17 19:00",
+      "round": "프로토 승부식 136회차",
+      "round_ts": 260136,
+      "league": "KBL",
+      "home": "원주DB",
+      "away": "안양정관",
       "status": "예정",
       "home_score": null,
       "away_score": null,
@@ -4183,37 +4235,37 @@
       "margin": null,
       "total_points": null,
       "win_lose": {
-        "match_no": 4326,
-        "home_odds": 1.24,
-        "away_odds": 2.92,
+        "match_no": 4434,
+        "home_odds": 1.87,
+        "away_odds": 1.63,
         "winner": null,
-        "favorite": "HOME",
+        "favorite": "AWAY",
         "hit_odds": null,
         "hit_type": null
       },
       "handicap": {
-        "match_no": 4328,
-        "standard": -6.5,
-        "home_odds": 1.77,
-        "away_odds": 1.71,
+        "match_no": 4436,
+        "standard": 1.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
         "home_cover": null,
         "result": null,
         "hit_odds": null
       },
       "under_over": {
-        "match_no": 4329,
-        "standard": 167.5,
-        "over_odds": 1.73,
-        "under_odds": 1.75,
+        "match_no": 4437,
+        "standard": 170.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
         "total": null,
         "result": null,
         "hit_odds": null
       },
       "w5": {
-        "match_no": 4327,
-        "win_odds": 1.65,
-        "draw5_odds": 2.85,
-        "lose_odds": 5.2,
+        "match_no": 4435,
+        "win_odds": 2.8,
+        "draw5_odds": 2.75,
+        "lose_odds": 2.33,
         "result": null
       }
     }
@@ -4989,45 +5041,47 @@
       "league": "WKBL",
       "home": "하나은행",
       "away": "우리은행",
-      "status": "예정",
-      "home_score": null,
-      "away_score": null,
-      "score": null,
-      "margin": null,
-      "total_points": null,
+      "status": "종료",
+      "home_score": 68,
+      "away_score": 67,
+      "score": "68:67",
+      "margin": 1,
+      "total_points": 135,
       "win_lose": {
         "match_no": 4331,
         "home_odds": 2.52,
         "away_odds": 1.33,
-        "winner": null,
+        "winner": "HOME",
         "favorite": "AWAY",
-        "hit_odds": null,
-        "hit_type": null
+        "hit_odds": 2.52,
+        "hit_type": "역배"
       },
       "handicap": {
         "match_no": 4333,
         "standard": 4.5,
         "home_odds": 1.77,
         "away_odds": 1.71,
-        "home_cover": null,
-        "result": null,
-        "hit_odds": null
+        "home_cover": true,
+        "result": "플핸",
+        "hit_odds": 1.77,
+        "line_count": 1
       },
       "under_over": {
         "match_no": 4334,
         "standard": 129.5,
         "over_odds": 1.72,
         "under_odds": 1.76,
-        "total": null,
-        "result": null,
-        "hit_odds": null
+        "total": 135,
+        "result": "OVER",
+        "hit_odds": 1.72,
+        "line_count": 1
       },
       "w5": {
         "match_no": 4332,
         "win_odds": 4.45,
         "draw5_odds": 2.6,
         "lose_odds": 1.85,
-        "result": null
+        "result": "5"
       }
     }
   ]

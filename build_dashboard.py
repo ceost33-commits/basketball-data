@@ -89,13 +89,117 @@ def odds_txt(v):
     return f"{v:.2f}"
 
 
+# ---------------------------------------------------------------- 퐁당(교대) 패턴
+# 퐁당 = 결과가 A↔B로 번갈아 이어지는 흐름. 최근 경기부터 거꾸로 세어
+# 서로 반대 결과가 연달아 나온 길이(교대 연속 수)가 3경기 이상이면 '퐁당'으로 본다.
+PD_MIN = 3
+HANDI_SYM = {"마핸": "마", "플핸": "플"}
+UO_SYM = {"OVER": "오", "UNDER": "언"}
+UO_KO = {"OVER": "오버", "UNDER": "언더"}
+HANDI_FS = {"마핸": "fs-ma", "플핸": "fs-pl"}
+UO_FS = {"OVER": "fs-over", "UNDER": "fs-under"}
+
+
+def alt_run_len(seq):
+    """최근 결과부터 거꾸로 세어 서로 다른 값이 번갈아 이어진 길이."""
+    if not seq:
+        return 0
+    n = 1
+    for i in range(len(seq) - 2, -1, -1):
+        if seq[i] != seq[i + 1]:
+            n += 1
+        else:
+            break
+    return n
+
+
+def flow_badges(seq, sym_map, cls_map, keep=6):
+    """최근 경기 흐름 기호(오래된 → 최신, 최신은 테두리 강조)."""
+    tail = seq[-keep:]
+    out = []
+    for i, v in enumerate(tail):
+        latest = " fs-latest" if i == len(tail) - 1 else ""
+        out.append(f'<span class="fs {cls_map.get(v, "fs-na")}{latest}">{sym_map.get(v, "?")}</span>')
+    return "".join(out)
+
+
+def pd_alt_map(matches):
+    """경기 id → (그 경기까지의 핸디 교대 수, UO 교대 수)."""
+    out = {}
+    hs, us = [], []
+    for m in matches:
+        if m.get("status") != "종료":
+            continue
+        hs.append((m.get("handicap") or {}).get("result"))
+        us.append((m.get("under_over") or {}).get("result"))
+        out[m["id"]] = (alt_run_len(hs), alt_run_len(us))
+    return out
+
+
+def pd_item(label_pair, alt, seq, sym_map, cls_map, keep=6):
+    """구단별 뷰 한 줄짜리 퐁당 띠."""
+    if alt <= 0:
+        return (f'<span class="pd-item"><span class="pd-item-t">{label_pair} 기록 없음</span></span>')
+    if alt >= PD_MIN:
+        cls, lead, txt = "pd-item on", "🔄", f"{label_pair} {alt}연속 퐁당"
+    elif alt == 2:
+        cls, lead, txt = "pd-item", "·", f"{label_pair} 2경기 교대"
+    else:
+        cls, lead, txt = "pd-item", "·", f"{label_pair} 퐁당 없음"
+    return (f'<span class="{cls}"><span class="pd-item-t">{lead} {txt}</span>'
+            f'<span class="pd-flow">{flow_badges(seq, sym_map, cls_map, keep)}</span></span>')
+
+
+def pd_chip(team, pair, alt, seq, sym_map, cls_map):
+    return (f'<span class="pdb-chip"><b>{short(team)}</b> {pair} {alt}'
+            f'<span class="pd-flow">{flow_badges(seq, sym_map, cls_map, 4)}</span></span>')
+
+
+def pd_teams_chips(matches, teams):
+    """리그 전체에서 현재 퐁당(3경기 이상 교대) 진행 중인 구단 칩 목록."""
+    rows = []
+    for t in teams:
+        tms = [m for m in team_matches(matches, t) if m.get("status") == "종료"]
+        h_seq = [(m.get("handicap") or {}).get("result") for m in tms if (m.get("handicap") or {}).get("result")]
+        uo_seq = [(m.get("under_over") or {}).get("result") for m in tms if (m.get("under_over") or {}).get("result")]
+        ha, ua = alt_run_len(h_seq), alt_run_len(uo_seq)
+        if ha >= PD_MIN:
+            rows.append((ha, t, pd_chip(t, "마↔플", ha, h_seq, HANDI_SYM, HANDI_FS)))
+        if ua >= PD_MIN:
+            rows.append((ua, t, pd_chip(t, "언↔오", ua, uo_seq, UO_SYM, UO_FS)))
+    rows.sort(key=lambda r: (-r[0], r[1]))
+    return rows
+
+
+def pd_banner(matches, teams):
+    """리그 전체 뷰 상단의 리그 흐름 + 퐁당 구단 요약."""
+    done = [m for m in matches if m.get("status") == "종료"]
+    h_seq = [(m.get("handicap") or {}).get("result") for m in done if (m.get("handicap") or {}).get("result")]
+    uo_seq = [(m.get("under_over") or {}).get("result") for m in done if (m.get("under_over") or {}).get("result")]
+    le_flow = pd_item("마↔플", alt_run_len(h_seq), h_seq, HANDI_SYM, HANDI_FS) + \
+        pd_item("언↔오", alt_run_len(uo_seq), uo_seq, UO_SYM, UO_FS)
+    rows = pd_teams_chips(matches, teams)
+    if rows:
+        shown = rows[:6]
+        chips = "".join(r[2] for r in shown)
+        more = f'<span class="pdb-none">외 {len(rows) - len(shown)}건</span>' if len(rows) > len(shown) else ""
+        team_line = (f'<span class="pdb-none">3경기 이상 교대 · {len(rows)}건</span>{chips}{more}')
+    else:
+        team_line = '<span class="pdb-none">현재 3경기 이상 퐁당 구단 없음</span>'
+    return f"""
+        <div class="pdb">
+          <div class="pdb-r"><span class="pdb-t">🔄 리그 흐름</span>{le_flow}</div>
+          <div class="pdb-r"><span class="pdb-t">🔄 퐁당 구단</span>{team_line}</div>
+        </div>"""
+
+
 # ---------------------------------------------------------------- 뱃지/카드
 
 def badge(text, kind):
     return f'<span class="bdg bdg-{kind}">{text}</span>'
 
 
-def match_card(m, idx=None, focus=None):
+def match_card(m, idx=None, focus=None, pd=None):
     is_done = m.get("status") == "종료"
     wl = m.get("win_lose") or {}
     hcp = m.get("handicap")
@@ -159,9 +263,13 @@ def match_card(m, idx=None, focus=None):
         sign = "+" if std > 0 else ""
         cls = "ma" if hcp["result"] == "마핸" else "pl"
         badges.append(badge(f"{hcp['result']} {sign}{std}", cls))
+        if pd and pd[0] >= PD_MIN:
+            badges.append(badge(f"🔄퐁당{pd[0]}", "pd"))
     if uo and uo["standard"] is not None:
         cls = "over" if uo["result"] == "OVER" else "under"
         badges.append(badge(f"{'오버' if uo['result']=='OVER' else '언더'} {uo['standard']}", cls))
+        if pd and pd[1] >= PD_MIN:
+            badges.append(badge(f"🔄퐁당{pd[1]}", "pd"))
     if w5:
         cls = {"승": "w5-win", "5": "w5-mid", "패": "w5-lose"}[w5["result"]]
         badges.append(badge(f"승5패 {w5['result']}", cls))
@@ -189,7 +297,7 @@ def match_card(m, idx=None, focus=None):
       </article>"""
 
 
-def ohlc_row(m, idx):
+def ohlc_row(m, idx, pd=None):
     """전체 뷰 누계 표 한 줄"""
     wl = m.get("win_lose") or {}
     hcp = m.get("handicap")
@@ -218,9 +326,13 @@ def ohlc_row(m, idx):
     if hcp:
         std = hcp["standard"]
         hc = f"{hcp['result']}{'' if std < 0 else '+'}{std}"
+        if pd and pd[0] >= PD_MIN:
+            hc = f'<span class="pdmk">🔄</span>{hc}'
     uo_t = "-"
     if uo and uo["standard"] is not None:
         uo_t = f"{'O' if uo['result']=='OVER' else 'U'}{uo['standard']}"
+        if pd and pd[1] >= PD_MIN:
+            uo_t = f'<span class="pdmk">🔄</span>{uo_t}'
     return f"""
         <tr>
           <td class="c-idx">{idx}</td>
@@ -275,6 +387,9 @@ def team_stats(matches, team):
     ma_seq, ma_n = streaks([h["result"] == "마핸" for h in hc])
     uo_seq, uo_n = streaks([u["result"] == "OVER" for u in uo])
     wl_seq, wl_n = streaks([won(m, team) for m in tms])
+    # 퐁당용 교대 열 (경기 순서 그대로, 기존 스트릭과 같은 순서)
+    h_flow = [(m.get("handicap") or {}).get("result") for m in tms if (m.get("handicap") or {}).get("result")]
+    u_flow = [(m.get("under_over") or {}).get("result") for m in tms if (m.get("under_over") or {}).get("result")]
     last5 = tms[-5:]
     pts_for = sum(m["home_score"] if m["home"] == team else m["away_score"] for m in tms)
     pts_ag = sum(m["away_score"] if m["home"] == team else m["home_score"] for m in tms)
@@ -287,6 +402,8 @@ def team_stats(matches, team):
         "when_fav": (wf, len(when_fav)), "when_dog": (wd, len(when_dog)),
         "ma_rate": pct(ma, len(hc)), "ma_streak": ("마핸" if ma_seq else "플핸", ma_n),
         "over_rate": pct(ov, len(uo)), "uo_streak": ("오버" if uo_seq else "언더", uo_n),
+        "h_alt": alt_run_len(h_flow), "uo_alt": alt_run_len(u_flow),
+        "h_flow": h_flow, "u_flow": u_flow,
         "wl_streak": ("연승" if wl_seq else "연패", wl_n),
         "last5": last5,
         "fav_list": fav_flags,
@@ -331,12 +448,13 @@ def stat_box(label, value, sub, cls):
 def team_view(matches, team, idx, prefix, all_count):
     st = team_stats(matches, team)
     tms = team_matches(matches, team)
+    pd_map = pd_alt_map(tms)
     done_n = sum(1 for m in tms if m.get("status") == "종료")
     rows = []
     done_idx = done_n
     for m in reversed(tms):
         if m.get("status") == "종료":
-            rows.append(match_card(m, done_idx, focus=team))
+            rows.append(match_card(m, done_idx, focus=team, pd=pd_map.get(m["id"])))
             done_idx -= 1
         else:
             rows.append(match_card(m, None, focus=team))
@@ -344,6 +462,10 @@ def team_view(matches, team, idx, prefix, all_count):
     ma_lbl = f"{st['ma_streak'][1]}연속 {st['ma_streak'][0]}"
     uo_lbl = f"{st['uo_streak'][1]}연속 {st['uo_streak'][0]}"
     wl_lbl = f"{st['wl_streak'][1]}연속 {st['wl_streak'][0]}"
+    pd_strip = (
+        pd_item("마↔플", st["h_alt"], st["h_flow"], HANDI_SYM, HANDI_FS) +
+        pd_item("언↔오", st["uo_alt"], st["u_flow"], UO_SYM, UO_FS)
+    )
     return f"""
       <section class="view team-view" id="tv-{prefix}-{idx}">
         <div class="team-head">
@@ -365,6 +487,7 @@ def team_view(matches, team, idx, prefix, all_count):
           <span class="strip-item {'s-ma' if st['ma_streak'][0]=='마핸' else 's-pl'}">{ma_lbl}</span>
           <span class="strip-item {'s-over' if st['uo_streak'][0]=='오버' else 's-under'}">{uo_lbl}</span>
         </div>
+        <div class="pd-strip">{pd_strip}</div>
         <div class="sgrid">
           {stat_box('정배 적중률', f"{st['fav_rate']}%", f"정배 {st['fav_hits']}/{st['n']}", 'c-fav')}
           {stat_box('정배시 전적', f"{st['when_fav'][0]}승 {st['when_fav'][1]-st['when_fav'][0]}패", '마감 배당 낮은 팀', 'c-fav2')}
@@ -383,11 +506,12 @@ def team_view(matches, team, idx, prefix, all_count):
 
 def overall_view(matches, prefix, title, sub):
     st = global_stats(matches)
+    pd_map = pd_alt_map(matches)
     done_idx = sum(1 for m in matches if m.get("status") == "종료")
     row_list = []
     for m in reversed(matches):
         if m.get("status") == "종료":
-            row_list.append(ohlc_row(m, done_idx))
+            row_list.append(ohlc_row(m, done_idx, pd=pd_map.get(m["id"])))
             done_idx -= 1
         else:
             row_list.append(ohlc_row(m, None))
@@ -404,6 +528,7 @@ def overall_view(matches, prefix, title, sub):
           {stat_box('평균 총득점', f"{st['avg_total']}", '양팀 합계', 'c-avg')}
           {stat_box('연속 흐름', fav_streak, uo_streak, 'c-flow')}
         </div>
+        {pd_banner(matches, teams_of(matches))}
         <div class="tbl-wrap">
           <div class="tbl-head"><span>최신 경기 위 · 개막전(#1) 아래</span><span>{sub}</span></div>
           <div class="scroll">
@@ -570,6 +695,37 @@ def build():
   .s-pl {{ color:#f0abfc; border-color:rgba(240,171,252,.4); background:rgba(240,171,252,.12); }}
   .s-over {{ color:var(--warning); border-color:rgba(251,191,36,.5); background:var(--warning-bg); }}
   .s-under {{ color:#93c5fd; border-color:rgba(147,197,253,.45); background:rgba(147,197,253,.12); }}
+
+  /* 퐁당(교대) 패턴 */
+  .pd-strip {{ display:flex; flex-direction:column; gap:3px; flex:0 0 auto; }}
+  .pd-item {{ display:flex; align-items:center; gap:4px; font-size:9px; font-weight:800; padding:3px 7px; border-radius:8px;
+              background:rgba(18,25,39,.9); border:1px solid var(--border-color); color:var(--text-sub);
+              white-space:nowrap; overflow:hidden; }}
+  .pd-item.on {{ background:linear-gradient(135deg, rgba(13,148,136,.22), rgba(124,58,237,.26)); border-color:#2dd4bf; color:#99f6e4; }}
+  .pd-item-t {{ flex:0 0 auto; }}
+  .pd-flow {{ display:inline-flex; gap:2px; margin-left:auto; flex:0 0 auto; }}
+  .fs {{ display:inline-flex; align-items:center; justify-content:center; min-width:14px; padding:0 2px; border-radius:3px;
+         font-size:8px; font-weight:800; line-height:1.4; }}
+  .fs-ma {{ background:rgba(192,132,252,.16); color:#c084fc; }}
+  .fs-pl {{ background:rgba(52,211,153,.14); color:#34d399; }}
+  .fs-over {{ background:rgba(251,191,36,.14); color:#fbbf24; }}
+  .fs-under {{ background:rgba(147,197,253,.14); color:#93c5fd; }}
+  .fs-na {{ background:rgba(100,116,139,.2); color:#94a3b8; }}
+  .fs-latest {{ box-shadow:0 0 0 1.2px rgba(248,250,252,.5); }}
+
+  .pdb {{ flex:0 0 auto; display:flex; flex-direction:column; gap:3px; background:var(--bg-card);
+          border:1px solid var(--border-color); border-radius:10px; padding:5px 8px; }}
+  .pdb-r {{ display:flex; align-items:center; gap:4px; flex-wrap:wrap; }}
+  .pdb-t {{ font-size:8.5px; font-weight:800; color:var(--text-sub); flex:0 0 auto; }}
+  .pdb-r .pd-item {{ padding:2px 6px; }}
+  .pdb-chip {{ display:inline-flex; align-items:center; gap:3px; font-size:8.5px; font-weight:700; padding:2px 5px; border-radius:5px;
+               background:rgba(56,189,248,.1); color:#7dd3fc; border:1px solid rgba(56,189,248,.25); white-space:nowrap; }}
+  .pdb-chip b {{ color:#e0f2fe; font-weight:800; }}
+  .pdb-chip .pd-flow {{ margin-left:0; }}
+  .pdb-none {{ font-size:8.5px; color:var(--text-sub); }}
+
+  .bdg-pd {{ background:linear-gradient(135deg, rgba(13,148,136,.28), rgba(124,58,237,.3)); color:#99f6e4; font-weight:800; }}
+  .pdmk {{ font-size:8px; margin-right:1px; }}
 
   .c-last {{ justify-content:center; }}
   .last5 {{ display:flex; gap:4px; flex:0 0 auto; padding:0 2px; }}

@@ -152,7 +152,7 @@ def pd_item(label_pair, alt, seq, sym_map, cls_map, keep=6):
 
 def pd_chip(team, pair, alt, seq, sym_map, cls_map):
     return (f'<span class="pdb-chip"><b>{short(team)}</b> {pair} {alt}'
-            f'<span class="pd-flow">{flow_badges(seq, sym_map, cls_map, 4)}</span></span>')
+            f'<span class="pd-flow">{flow_badges(seq, sym_map, cls_map, min(max(alt, 3), 5))}</span></span>')
 
 
 def pd_teams_chips(matches, teams):

@@ -91,7 +91,10 @@ def odds_txt(v):
 
 # ---------------------------------------------------------------- 퐁당(교대) 패턴
 # 퐁당 = 결과가 A↔B로 번갈아 이어지는 흐름. 최근 경기부터 거꾸로 세어
-# 서로 반대 결과가 연달아 나온 길이(교대 연속 수)가 3경기 이상이면 '퐁당'으로 본다.
+# 서로 반대 결과가 연달아 나온 길이(교대 경기 수)를 구한다.
+# 1사이클(언→옵 / 옵→언, 마→플 / 플→마) = 2경기 = 1퐁당. 따라서 퐁당 수 = 교대 경기 수 / 2
+# (2경기 → 1퐁당, 3경기 → 1.5퐁당, 4경기 → 2퐁당, 5경기 → 2.5퐁당, 6경기 → 3퐁당).
+# 1.5퐁당(3경기) 이상일 때만 퐁당으로 강조한다. 'N연속 퐁당' 같은 경기 수 표기는 쓰지 않는다.
 PD_MIN = 3
 HANDI_SYM = {"마핸": "마", "플핸": "플"}
 UO_SYM = {"OVER": "오", "UNDER": "언"}
@@ -111,6 +114,13 @@ def alt_run_len(seq):
         else:
             break
     return n
+
+
+def fmt_pong(alt):
+    """교대 경기 수 → 퐁당 수 표기 (2경기 = 1사이클 = 1퐁당)."""
+    if alt <= 0:
+        return "0퐁당"
+    return f"{alt / 2:g}퐁당"
 
 
 def flow_badges(seq, sym_map, cls_map, keep=6):
@@ -141,9 +151,9 @@ def pd_item(label_pair, alt, seq, sym_map, cls_map, keep=6):
     if alt <= 0:
         return (f'<span class="pd-item"><span class="pd-item-t">{label_pair} 기록 없음</span></span>')
     if alt >= PD_MIN:
-        cls, lead, txt = "pd-item on", "🔄", f"{label_pair} {alt}연속 퐁당"
+        cls, lead, txt = "pd-item on", "🔄", f"{label_pair} {fmt_pong(alt)} ({alt}경기)"
     elif alt == 2:
-        cls, lead, txt = "pd-item", "·", f"{label_pair} 2경기 교대"
+        cls, lead, txt = "pd-item", "·", f"{label_pair} 1퐁당 (2경기)"
     else:
         cls, lead, txt = "pd-item", "·", f"{label_pair} 퐁당 없음"
     return (f'<span class="{cls}"><span class="pd-item-t">{lead} {txt}</span>'
@@ -151,7 +161,7 @@ def pd_item(label_pair, alt, seq, sym_map, cls_map, keep=6):
 
 
 def pd_chip(team, pair, alt, seq, sym_map, cls_map):
-    return (f'<span class="pdb-chip"><b>{short(team)}</b> {pair} {alt}'
+    return (f'<span class="pdb-chip"><b>{short(team)}</b> {pair} {fmt_pong(alt)} ({alt}경기)'
             f'<span class="pd-flow">{flow_badges(seq, sym_map, cls_map, min(max(alt, 3), 5))}</span></span>')
 
 
@@ -183,9 +193,9 @@ def pd_banner(matches, teams):
         shown = rows[:6]
         chips = "".join(r[2] for r in shown)
         more = f'<span class="pdb-none">외 {len(rows) - len(shown)}건</span>' if len(rows) > len(shown) else ""
-        team_line = (f'<span class="pdb-none">3경기 이상 교대 · {len(rows)}건</span>{chips}{more}')
+        team_line = (f'<span class="pdb-none">1.5퐁당(3경기) 이상 · {len(rows)}건</span>{chips}{more}')
     else:
-        team_line = '<span class="pdb-none">현재 3경기 이상 퐁당 구단 없음</span>'
+        team_line = '<span class="pdb-none">현재 1.5퐁당(3경기) 이상 진행 구단 없음</span>'
     return f"""
         <div class="pdb">
           <div class="pdb-r"><span class="pdb-t">🔄 리그 흐름</span>{le_flow}</div>
@@ -264,12 +274,12 @@ def match_card(m, idx=None, focus=None, pd=None):
         cls = "ma" if hcp["result"] == "마핸" else "pl"
         badges.append(badge(f"{hcp['result']} {sign}{std}", cls))
         if pd and pd[0] >= PD_MIN:
-            badges.append(badge(f"🔄퐁당{pd[0]}", "pd"))
+            badges.append(badge(f"🔄 {fmt_pong(pd[0])} ({pd[0]}경기)", "pd"))
     if uo and uo["standard"] is not None:
         cls = "over" if uo["result"] == "OVER" else "under"
         badges.append(badge(f"{'오버' if uo['result']=='OVER' else '언더'} {uo['standard']}", cls))
         if pd and pd[1] >= PD_MIN:
-            badges.append(badge(f"🔄퐁당{pd[1]}", "pd"))
+            badges.append(badge(f"🔄 {fmt_pong(pd[1])} ({pd[1]}경기)", "pd"))
     if w5:
         cls = {"승": "w5-win", "5": "w5-mid", "패": "w5-lose"}[w5["result"]]
         badges.append(badge(f"승5패 {w5['result']}", cls))

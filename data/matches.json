@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20 08:03",
+  "last_updated": "2026-11-21 08:03",
   "source": "m.betman.co.kr 프로토 승부식 적중결과 (winrstDetl.do) & 발매중게임 (gameSlip.do) DOM",
   "labels": {
     "handicap": "마핸/플핸 (홈 기준 '-' 핸디캡 팀이 기준점을 넘기면 마핸, '+' 핸디캡 팀이 지켜내면 플핸)",
@@ -5304,6 +5304,58 @@
       "league": "WKBL",
       "home": "하나은행",
       "away": "삼성생명",
+      "status": "종료",
+      "home_score": 57,
+      "away_score": 75,
+      "score": "57:75",
+      "margin": -18,
+      "total_points": 132,
+      "win_lose": {
+        "match_no": 4673,
+        "home_odds": 2.59,
+        "away_odds": 1.35,
+        "winner": "AWAY",
+        "favorite": "AWAY",
+        "hit_odds": 1.35,
+        "hit_type": "정배"
+      },
+      "handicap": {
+        "match_no": 4675,
+        "standard": 4.5,
+        "home_odds": 1.79,
+        "away_odds": 1.69,
+        "home_cover": false,
+        "result": "마핸",
+        "hit_odds": 1.69,
+        "line_count": 1
+      },
+      "under_over": {
+        "match_no": 4676,
+        "standard": 137.5,
+        "over_odds": 1.75,
+        "under_odds": 1.73,
+        "total": 132,
+        "result": "UNDER",
+        "hit_odds": 1.73,
+        "line_count": 1
+      },
+      "w5": {
+        "match_no": 4674,
+        "win_odds": 4.55,
+        "draw5_odds": 2.6,
+        "lose_odds": 1.81,
+        "result": "패"
+      }
+    },
+    {
+      "id": "W4834",
+      "seq": 4834,
+      "date": "2026-11-21 15:10",
+      "round": "프로토 승부식 138회차",
+      "round_ts": 260138,
+      "league": "WKBL",
+      "home": "KB스타즈",
+      "away": "신한은행",
       "status": "예정",
       "home_score": null,
       "away_score": null,
@@ -5311,37 +5363,87 @@
       "margin": null,
       "total_points": null,
       "win_lose": {
-        "match_no": 4673,
-        "home_odds": 2.59,
-        "away_odds": 1.31,
+        "match_no": 4834,
+        "home_odds": 1.55,
+        "away_odds": 1.98,
+        "winner": null,
+        "favorite": "HOME",
+        "hit_odds": null,
+        "hit_type": null
+      },
+      "handicap": {
+        "match_no": 4836,
+        "standard": -2.5,
+        "home_odds": 1.78,
+        "away_odds": 1.7,
+        "home_cover": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "under_over": {
+        "match_no": 4837,
+        "standard": 130.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
+        "total": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "w5": {
+        "match_no": 4835,
+        "win_odds": 2.25,
+        "draw5_odds": 2.5,
+        "lose_odds": 3.15,
+        "result": null
+      }
+    },
+    {
+      "id": "W4843",
+      "seq": 4843,
+      "date": "2026-11-21 16:00",
+      "round": "프로토 승부식 138회차",
+      "round_ts": 260138,
+      "league": "WKBL",
+      "home": "BNK썸",
+      "away": "우리은행",
+      "status": "예정",
+      "home_score": null,
+      "away_score": null,
+      "score": null,
+      "margin": null,
+      "total_points": null,
+      "win_lose": {
+        "match_no": 4843,
+        "home_odds": 1.88,
+        "away_odds": 1.62,
         "winner": null,
         "favorite": "AWAY",
         "hit_odds": null,
         "hit_type": null
       },
       "handicap": {
-        "match_no": 4675,
-        "standard": 4.5,
-        "home_odds": 1.79,
-        "away_odds": 1.69,
+        "match_no": 4845,
+        "standard": 1.5,
+        "home_odds": 1.74,
+        "away_odds": 1.74,
         "home_cover": null,
         "result": null,
         "hit_odds": null
       },
       "under_over": {
-        "match_no": 4676,
-        "standard": 137.5,
-        "over_odds": 1.75,
-        "under_odds": 1.73,
+        "match_no": 4846,
+        "standard": 124.5,
+        "over_odds": 1.74,
+        "under_odds": 1.74,
         "total": null,
         "result": null,
         "hit_odds": null
       },
       "w5": {
-        "match_no": 4674,
-        "win_odds": 4.55,
-        "draw5_odds": 2.6,
-        "lose_odds": 1.79,
+        "match_no": 4844,
+        "win_odds": 2.9,
+        "draw5_odds": 2.5,
+        "lose_odds": 2.39,
         "result": null
       }
     }

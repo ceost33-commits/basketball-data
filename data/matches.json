@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24 08:04",
+  "last_updated": "2026-11-25 08:04",
   "source": "m.betman.co.kr 프로토 승부식 적중결과 (winrstDetl.do) & 발매중게임 (gameSlip.do) DOM",
   "labels": {
     "handicap": "마핸/플핸 (홈 기준 '-' 핸디캡 팀이 기준점을 넘기면 마핸, '+' 핸디캡 팀이 지켜내면 플핸)",
@@ -5549,6 +5549,56 @@
         "draw5_odds": 3.15,
         "lose_odds": 6.4,
         "result": "5"
+      }
+    },
+    {
+      "id": "W5657",
+      "seq": 5657,
+      "date": "2026-11-25 19:00",
+      "round": "프로토 승부식 140회차",
+      "round_ts": 260140,
+      "league": "WKBL",
+      "home": "우리은행",
+      "away": "KB스타즈",
+      "status": "예정",
+      "home_score": null,
+      "away_score": null,
+      "score": "-",
+      "margin": null,
+      "total_points": null,
+      "win_lose": {
+        "match_no": 5657,
+        "home_odds": 2.38,
+        "away_odds": 1.37,
+        "winner": null,
+        "favorite": "AWAY",
+        "hit_odds": null,
+        "hit_type": null
+      },
+      "handicap": {
+        "match_no": 5659,
+        "standard": 3.5,
+        "home_odds": 1.8,
+        "away_odds": 1.68,
+        "home_cover": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "under_over": {
+        "match_no": 5660,
+        "standard": 126.5,
+        "over_odds": 1.73,
+        "under_odds": 1.75,
+        "total": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "w5": {
+        "match_no": 5658,
+        "win_odds": 4.25,
+        "draw5_odds": 2.4,
+        "lose_odds": 1.96,
+        "result": null
       }
     }
   ]

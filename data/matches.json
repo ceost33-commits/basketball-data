@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26 08:04",
+  "last_updated": "2026-11-27 08:06",
   "source": "m.betman.co.kr 프로토 승부식 적중결과 (winrstDetl.do) & 발매중게임 (gameSlip.do) DOM",
   "labels": {
     "handicap": "마핸/플핸 (홈 기준 '-' 핸디캡 팀이 기준점을 넘기면 마핸, '+' 핸디캡 팀이 지켜내면 플핸)",
@@ -5601,6 +5601,56 @@
         "draw5_odds": 2.4,
         "lose_odds": 1.9,
         "result": "패"
+      }
+    },
+    {
+      "id": "W6096",
+      "seq": 6096,
+      "date": "2026-11-27 19:00",
+      "round": "프로토 승부식 141회차",
+      "round_ts": 260141,
+      "league": "WKBL",
+      "home": "삼성생명",
+      "away": "신한은행",
+      "status": "예정",
+      "home_score": null,
+      "away_score": null,
+      "score": "-",
+      "margin": null,
+      "total_points": null,
+      "win_lose": {
+        "match_no": 6096,
+        "home_odds": 2.02,
+        "away_odds": 1.53,
+        "winner": null,
+        "favorite": "AWAY",
+        "hit_odds": null,
+        "hit_type": null
+      },
+      "handicap": {
+        "match_no": 6098,
+        "standard": 2.5,
+        "home_odds": 1.73,
+        "away_odds": 1.75,
+        "home_cover": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "under_over": {
+        "match_no": 6099,
+        "standard": 131.5,
+        "over_odds": 1.71,
+        "under_odds": 1.77,
+        "total": null,
+        "result": null,
+        "hit_odds": null
+      },
+      "w5": {
+        "match_no": 6097,
+        "win_odds": 3.2,
+        "draw5_odds": 2.55,
+        "lose_odds": 2.18,
+        "result": null
       }
     }
   ]
